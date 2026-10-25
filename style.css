@@ -1,6 +1,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f8f4e8;
         }
 
         /* Linke Navigationsleiste */
@@ -261,3 +262,185 @@ figcaption{
     margin-top:20px;
     max-width:80%;
 }
+/* ========================= */
+/* Smartphone */
+/* ========================= */
+
+#menuButton{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    #menuButton{
+
+        display:flex;
+
+        position:fixed;
+
+        top:15px;
+        left:15px;
+
+        width:48px;
+        height:48px;
+
+        justify-content:center;
+        align-items:center;
+
+        font-size:28px;
+
+        background:#333;
+        color:white;
+
+        border-radius:10px;
+
+        cursor:pointer;
+
+        z-index:2000;
+    }
+
+    nav{
+
+        left:-240px;
+
+        transition:left .3s;
+
+        z-index:1500;
+    }
+
+    nav.offen{
+
+        left:0;
+
+    }
+
+    main{
+
+        margin-left:0;
+        padding-top:80px;
+
+    }
+}
+.sterne{
+    color:gold;
+    font-size:42px;
+    letter-spacing:5px;
+}
+.tag{
+
+    font-size:2.6rem;
+    font-weight:bold;
+
+    margin-top:40px;
+    margin-bottom:15px;
+
+    color:#2c3e50;
+
+}
+.stop{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:1.6rem;
+    font-weight:bold;
+
+    margin-top:35px;
+    margin-bottom:15px;
+
+    color:#2c3e50;
+}
+
+.tagesTrenner {
+    text-align: center;
+    padding: 40px;
+    width: 90vw;
+    max-width: 1000px;
+    height: 90vh;
+
+    box-sizing: border-box;
+
+    background-image: url("pictures/map.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tagesTrennerTitel {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1e3fe8;
+}
+
+.tagesTrennerText {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+}
+.tagesTrennerSterne{
+    color:gold;
+    font-size:42px;
+    letter-spacing:5px;
+}
+.tagesTrennerTextBox {
+    background: rgba(248, 244, 232, 0.7);
+}
+
+.reiseHeader {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.reiseHeader h1 {
+    margin-bottom: 10px;
+}
+
+.reiseUebersicht {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.reiseKarte {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.reiseKarte:hover {
+    transform: translateY(-4px);
+}
+
+.reiseKarte img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.reiseKartenText {
+    padding: 18px;
+}
+
+.reiseKartenText h2 {
+    margin: 0 0 8px;
+}
+
+.reiseKartenText p {
+    margin: 0;
+}
+

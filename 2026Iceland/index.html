@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="menuButton" onclick="toggleMenu()">
+    ☰
+</div>
+    <nav id="nav">
+        <a href="../index.html">Alle Reisen</a>
+        <hr>
+        <a href="#Tag0" onclick="toggleMenu()">Island</a>
+        <a href="#Tag1" onclick="toggleMenu()">Tag 2 - Þórufoss & Thingvellir</a>
+        <a href="#Tag2" onclick="toggleMenu()">Tag 3 - Akranes -> Westfjorde</a>
+        <a href="#Tag3" onclick="toggleMenu()">Tag 4 - Westfjorde</a>
+        <a href="#Tag4" onclick="toggleMenu()">Tag 5 - Westfjorde -> Snæfellsnes</a>
+        <a href="#Tag5" onclick="toggleMenu()">Tag 6 - Snæfellsnes</a>
+        <a href="#Tag6" onclick="toggleMenu()">Tag 7 - Snæfellsnes -> Reykjavík</a>
+    </nav>
+
+    <main>
+        <section id="Tag0"><center>
+            <p class="tag">Island</p>
+            <p>25. September 2026 - 02. Oktober 2026</p>
+            <p><img src="pictures/flag.jpg" width="50%" class="bildOval">
+            <p><img src="pictures/map.png" width="50%"></center>
+        </section>
+    <hr>
+        <section id="Tag1">
+            <p class="tag">2. Tag</p>
+            <p class="stop">Þórufoss & Thingvellir Nationalpark</p>
+            <p><div class="galerie" id="galerie1"></div></p>
+        </section>
+    <hr>
+        <section id="Tag2">
+            <p class="tag">3. Tag</p>
+            <p class="stop">Akranes ->  Westfjorde</p>
+            <p><div class="galerie" id="galerie2"></div></p>
+        </section>
+    <hr>
+        <section id="Tag3">
+            <p class="tag">4. Tag</p>
+            <p class="stop">Westfjorde</p>
+            <p><div class="galerie" id="galerie3"></div></p>
+        </section>
+    <hr>
+        <section id="Tag4">
+            <p class="tag">5. Tag</p>
+            <p class="stop">Westfjorde -> Snæfellsnes</p>
+            <p><div class="galerie" id="galerie4"></div></p>
+        </section>
+    <hr>
+        <section id="Tag5">
+            <p class="tag">6. Tag</p>
+            <p class="stop">Snæfellsnes</p>
+            <p><div class="galerie" id="galerie5"></div></p>
+        </section>
+    <hr>
+        <section id="Tag6">
+            <p class="tag">7. Tag</p>
+            <p class="stop">Snæfellsnes -> Reykjavík</p>
+            <p><div class="galerie" id="galerie6"></div></p>
+        </section>
+
+
+</main>
+<div id="lightbox">
+
+    <span class="schliessen" onclick="closeLightbox()">&times;</span>
+
+    <span class="pfeil links" onclick="prevImage()">&#10094;</span>
+
+<div class="lightbox-inhalt">
+
+    <img id="grossesBild" style="display:none;">
+
+    <video id="grossesVideo"
+           controls
+           style="display:none; max-width:90vw; max-height:85vh;">
+    </video>
+
+    <div id="videoOverlay" onclick="videoStarten()">
+    ▶
+    </div>
+
+    <p id="bildBeschreibung"></p>
+
+</div>
+
+    <span class="pfeil rechts" onclick="nextImage()">&#10095;</span>
+
+</div>
+
+
+<script src="lightboxscript.js"></script>
+<script src="galerie.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
