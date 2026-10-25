@@ -331,10 +331,12 @@ document.addEventListener("keydown", function(e) {
             bildAusschnittVerschieben("rechts");
         }
 
-        if (taste === "ArrowUp") {
+        if (e.key === "ArrowUp") {
             e.preventDefault();
+            e.stopPropagation();
             bildAusschnittVerschieben("oben");
-        }
+    }
+
 
         if (taste === "ArrowDown") {
             e.preventDefault();
