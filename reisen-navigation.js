@@ -1,3 +1,6 @@
+const basisPfad = "/journeys/";
+
+
 
 const reisen = [
     {
@@ -14,24 +17,23 @@ const reisen = [
     }
 ];
 
-
 const reiseJahre = [
     {
         jahr: "2026",
         reisen: [
-            { name: "Sri Lanka", link: "../2026SriLanka/index.html" },
-            { name: "Großbritannien", link: "../2026GB/index.html" },
-            { name: "Island", link: "../2026Iceland/index.html" }
+            { name: "Sri Lanka", link: "2026SriLanka/index.html" },
+            { name: "Großbritannien", link: "2026GB/index.html" },
+            { name: "Island", link: "2026Iceland/index.html" }
         ]
     },
     {
         jahr: "2027",
         reisen: [
-            // Hier später neue Reisen eintragen
-            { name: "Dummy", link: "../2026SriLanka/index.html" },
+            { name: "Dummy", link: "2026SriLanka/index.html" },
         ]
     }
 ];
+
 
 
 function reisenNavigationErstellen() {
@@ -40,7 +42,7 @@ function reisenNavigationErstellen() {
     if (!container) return;
 
     container.innerHTML = `
-        <a href="../index.html" onclick="toggleMenu()">
+        <a href="${basisPfad}index.html" onclick="toggleMenu()">
             Reiseübersicht
         </a>
     `;
@@ -64,7 +66,7 @@ function reisenNavigationErstellen() {
 
         gruppe.reisen.forEach(reise => {
             const link = document.createElement("a");
-            link.href = reise.link;
+            link.href = basisPfad + reise.link;
             link.textContent = reise.name;
             link.onclick = toggleMenu;
             links.appendChild(link);
