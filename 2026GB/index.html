@@ -12,14 +12,24 @@
 <div id="menuButton" onclick="toggleMenu()">
     ☰
 </div>
-    <nav id="nav">
-        <a href="../index.html">Alle Reisen</a>
+
+<nav id="nav">
+
+    <div class="nav-oben">
+        <details class="reisen-dropdown">
+            <summary>Alle Reisen</summary>
+            <div class="reisen-untermenue" id="reisen-links"></div>
+        </details>
         <hr>
-        <a href="#Tag0" onclick="toggleMenu()">Northumbria & Edinburgh</a>
+    </div>
+
+    <div class="nav-tage">
+        <a href="#Tag0" onclick="toggleMenu()">Northumbria & Edinburgh</a><br>
         <a href="#Tag1" onclick="toggleMenu()">Tag 1 - Hartlepool, Warkworth, Seahouses</a>
         <a href="#Tag2" onclick="toggleMenu()">Tag 2 - Holy Island, Bamburgh, Farne Islands</a>
         <a href="#Tag3" onclick="toggleMenu()">Tag 3 - Edinburgh, Military Tattoo</a>
         <a href="#Tag4" onclick="toggleMenu()">Tag 4 - Edinburgh</a>
+   </div>
     </nav>
 
     <main>
@@ -91,6 +101,7 @@
 <script src="../lightboxscript.js"></script>
 <script src="galerie.js"></script>
 <script src="../script.js"></script>
+<script src="../reisen-navigation.js"></script>
 
 </body>
 </html>

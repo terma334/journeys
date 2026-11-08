@@ -12,23 +12,37 @@
 <div id="menuButton" onclick="toggleMenu()">
     ☰
 </div>
-    <nav id="nav">
-        <a href="../index.html">Alle Reisen</a>
+
+<nav id="nav">
+
+    <div class="nav-oben">
+        <details class="reisen-dropdown">
+            <summary>Alle Reisen</summary>
+            <div class="reisen-untermenue" id="reisen-links"></div>
+        </details>
         <hr>
-        <a href="#Tag0" onclick="toggleMenu()">Island</a>
-        <a href="#Tag1" onclick="toggleMenu()">Tag 2 - Þórufoss & Thingvellir</a>
-        <a href="#Tag2" onclick="toggleMenu()">Tag 3 - Akranes -> Westfjorde</a>
-        <a href="#Tag3" onclick="toggleMenu()">Tag 4 - Westfjorde</a>
-        <a href="#Tag4" onclick="toggleMenu()">Tag 5 - Westfjorde -> Snæfellsnes</a>
-        <a href="#Tag5" onclick="toggleMenu()">Tag 6 - Snæfellsnes</a>
-        <a href="#Tag6" onclick="toggleMenu()">Tag 7 - Snæfellsnes -> Reykjavík</a>
-    </nav>
+    </div>
+
+    <div class="nav-tage">
+
+    <!-- Hier folgt deine bisherige Tagesnavigation -->
+
+    <a href="#Tag0" onclick="toggleMenu()">Island</a><br>
+    <a href="#Tag1" onclick="toggleMenu()">Tag 2 - Þórufoss & Thingvellir</a>
+    <a href="#Tag2" onclick="toggleMenu()">Tag 3 - Akranes -> Westfjorde</a>
+    <a href="#Tag3" onclick="toggleMenu()">Tag 4 - Westfjorde</a>
+    <a href="#Tag4" onclick="toggleMenu()">Tag 5 - Westfjorde -> Snæfellsnes</a>
+    <a href="#Tag5" onclick="toggleMenu()">Tag 6 - Snæfellsnes</a>
+    <a href="#Tag6" onclick="toggleMenu()">Tag 7 - Snæfellsnes -> Reykjavík</a>
+</div>
+</nav>
+
 
     <main>
         <section id="Tag0"><center>
             <p class="tag">Island</p>
             <p>25. September 2026 - 02. Oktober 2026</p>
-            <p><img src="pictures/flag.jpg" class="bildOval">
+            <p><img src="pictures/flag.jpg" width="30%" class="bildOval">
             <p><img src="pictures/map.png" width="70%"></center>
         </section>
     <hr>
@@ -101,6 +115,7 @@
 <script src="../lightboxscript.js"></script>
 <script src="galerie.js"></script>
 <script src="../script.js"></script>
+<script src="../reisen-navigation.js"></script>
 
 </body>
 </html>

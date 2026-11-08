@@ -12,10 +12,19 @@
 <div id="menuButton" onclick="toggleMenu()">
     ☰
 </div>
-    <nav id="nav">
-        <a href="../index.html">Alle Reisen</a>
+<nav id="nav">
+
+    <div class="nav-oben">
+        <details class="reisen-dropdown">
+            <summary>Alle Reisen</summary>
+            <div class="reisen-untermenue" id="reisen-links"></div>
+        </details>
         <hr>
-        <a href="#Tag0" onclick="toggleMenu()">Weroad Sri Lanka 360°</a>
+    </div>
+
+    <div class="nav-tage">
+       
+        <a href="#Tag0" onclick="toggleMenu()">Weroad Sri Lanka 360°</a><br>
         <a href="#Tag1" onclick="toggleMenu()">Tag 1 - Negombo</a>
         <a href="#Tag2" onclick="toggleMenu()">Tag 2 - Udawalawe</a>
         <a href="#Tag3" onclick="toggleMenu()">Tag 3 - Ella</a>
@@ -31,6 +40,8 @@
         <a href="#Tag13" onclick="toggleMenu()">Tag 13 - Maragahawewa</a>
         <a href="#Tag14" onclick="toggleMenu()">Tag 14 - Colombo</a>
         <a href="#Tag15" onclick="toggleMenu()">Tag 15 - Rückflug</a>
+
+        </div>
     </nav>
 
     <main>
@@ -218,7 +229,7 @@
 <script src="../lightboxscript.js"></script>
 <script src="galerie.js"></script>
 <script src="../script.js"></script>
-</body>
+<script src="../reisen-navigation.js"></script>
 
 </body>
 </html>

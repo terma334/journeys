@@ -14,6 +14,37 @@
             background-color: #333;
             padding-top: 20px;
         }
+#nav {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Oberer Bereich bleibt stehen */
+.nav-oben {
+    flex-shrink: 0;
+}
+
+/* Nur die Tagesnavigation scrollt */
+.nav-tage {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* Scrollbar ausblenden */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Scrollbar in Chrome, Edge und Safari ausblenden */
+.nav-tage::-webkit-scrollbar {
+    display: none;
+}
 
         nav a {
             display: block;
@@ -35,6 +66,97 @@
         section {
             margin-bottom: 80px;
         }
+
+/* Linke Navigationsleiste */
+
+.reisen-dropdown {
+    margin-bottom: 10px;
+}
+
+.reisen-dropdown summary {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+    color: #d4a017;
+}
+
+.reisen-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.reisen-dropdown summary::after {
+    content: "▾";
+    position: absolute;
+    right: 12px;
+    transition: transform 0.2s;
+}
+
+.reisen-dropdown[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.reisen-untermenue {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+/* Jahreszahlen */
+.reise-jahr-dropdown {
+    margin-left: 10px;
+}
+
+.reise-jahr-dropdown summary {
+    cursor: pointer;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: #d4a017;
+    list-style: none;
+}
+
+.reise-jahr-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.reise-jahr-dropdown summary::after {
+    content: "▾";
+    float: right;
+    transition: transform 0.2s;
+}
+
+.reise-jahr-dropdown[open] summary::after {
+    transform: rotate(180deg);
+}
+
+/* Einzelne Reisen */
+.reise-jahr-links {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.reise-jahr-links a {
+    padding: 8px 10px;
+    font-size: 0.95em;
+}
+
+
+
+.reisen-jahr {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #d4a017;
+    padding: 8px 10px 4px 10px;
+    margin-left: 10px;
+}
+
+.reisen-untermenue a {
+    padding: 8px 10px;
+    font-size: 0.95em;
+}
+
 
 /* Galerie */
 .galerie{
@@ -551,8 +673,6 @@ figcaption{
 
 
 .bildOval {
-    width: 30%;
-    height: 30%;
     object-fit: cover;
     border-radius: 50%;
 }

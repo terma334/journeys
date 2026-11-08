@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Reisen</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Reiseübersicht</title>
+
+<link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
+<div id="menuButton" onclick="toggleMenu()">
+    ☰
+</div>
 
-    <header class="reiseHeader">
-        <h1>Meine Reisen</h1>
-        <p>Reiseberichte, Fotos und Erlebnisse aus aller Welt</p>
-    </header>
+<nav id="nav">
 
-    <main class="reiseUebersicht">
+    <div class="nav-oben">
+        <details class="reisen-dropdown">
+            <summary>Alle Reisen</summary>
+            <div class="reisen-untermenue" id="reisen-links"></div>
+        </details>
+        <hr>
+    </div>
+    </nav>
+
+<main class="reiseUebersicht">
+
+       <div class="reiseKartenText">
+                <h2>2026:</h2>
+            </div> 
 
         <a href="2026SriLanka/index.html" class="reiseKarte">
-            <img src="2026SriLanka/pictures/flag.png" width="50%">
             <div class="reiseKartenText">
                 <h2>Sri Lanka</h2>
-                <p>Tempel, Teeplantagen und wilde Tiere</p>
             </div>
         </a>
 
         <a href="2026GB/index.html" class="reiseKarte">
-            <img src="pictures/island-titel.jpg"
-                 alt="Landschaft in Island">
             <div class="reiseKartenText">
                 <h2>Northumbria & Edinburgh</h2>
-                <p>Westfjorde, Wasserfälle und wilde Küsten</p>
             </div>
         </a>
 
         <a href="2026Iceland/index.html" class="reiseKarte">
-            <img src="pictures/island-titel.jpg"
-                 alt="Landschaft in Island">
             <div class="reiseKartenText">
                 <h2>Island</h2>
-                <p>Westfjorde, Wasserfälle und wilde Küsten</p>
             </div>
         </a>
 
@@ -45,6 +52,12 @@
 
     </main>
 
+
+
+<script src="lightboxscript.js"></script>
+<script src="galerie.js"></script>
+<script src="script.js"></script>
+<script src="reisen-navigation.js"></script>
+
 </body>
 </html>
-
