@@ -114,4 +114,12 @@ function startseiteErstellen() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", startseiteErstellen);
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("reise-karten");
+
+    if (container) {
+        container.innerHTML = "<h2 style='color:red'>JAVASCRIPT FUNKTIONIERT!</h2>";
+    } else {
+        alert("Der Kartencontainer wurde nicht gefunden!");
+    }
+});
