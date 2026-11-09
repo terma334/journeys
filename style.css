@@ -1,8 +1,46 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f8f4e8;
+            background-color: #e7dcc5;
         }
+
+
+/* =========================================
+   WELTKARTEN-WASSERZEICHEN AUF REISESEITEN
+   ========================================= */
+
+main:not(.startseite) {
+    position: relative;
+    isolation: isolate;
+    background-color: #e7dcc5;
+}
+
+/* Weltkarte im Hintergrund */
+
+main:not(.startseite)::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+
+    top: 50%;
+    left: calc(50% + 110px);
+
+    transform: translate(-50%, -50%);
+
+    width: 75%;
+    height: 75vh;
+
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.055;
+    filter: sepia(1);
+
+    pointer-events: none;
+}
+
 
         /* Linke Navigationsleiste */
         nav {
@@ -17,7 +55,7 @@
 #nav {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -671,8 +709,129 @@ figcaption{
 
 
 
+/* =========================================
+   NAVIGATION – DUNKLES LEDER / REISETAGEBUCH
+   ========================================= */
+
+#nav {
+    background-color: #493A2D;
+    background-image:
+        radial-gradient(
+            ellipse at 20% 15%,
+            rgba(180, 145, 100, 0.13),
+            transparent 55%
+        ),
+        repeating-linear-gradient(
+            125deg,
+            rgba(255, 255, 255, 0.015) 0px,
+            rgba(255, 255, 255, 0.015) 1px,
+            transparent 1px,
+            transparent 5px
+        ),
+        linear-gradient(
+            160deg,
+            #514131,
+            #392D23
+        );
+
+    border-right: 2px solid #806747;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.18);
+    color: #E9D9BB;
+}
+
+/* Oberer Navigationsbereich */
+#nav .nav-oben {
+    padding: 12px;
+}
+
+/* Überschrift Alle Reisen */
+#nav .reisen-dropdown summary {
+    color: #E3C99D;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    list-style: none;
+    border: 1px solid #806747;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.045);
+    transition: background 0.2s, color 0.2s;
+}
+
+#nav .reisen-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+#nav .reisen-dropdown summary::after {
+    content: "⌄";
+    float: right;
+    color: #C5A878;
+    font-size: 18px;
+}
+
+#nav .reisen-dropdown[open] summary::after {
+    content: "⌃";
+}
+
+#nav .reisen-dropdown summary:hover {
+    background: rgba(210, 180, 130, 0.16);
+    color: #FFF0D0;
+}
+
+/* Reiseeinträge und Tageslinks */
+#nav a {
+    display: block;
+    color: #E2D2B5;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Hover-Effekt */
+#nav a:hover {
+    background: rgba(210, 180, 130, 0.18);
+    color: #FFF0D0;
+}
+
+/* Trennlinien */
+#nav hr {
+    border: none;
+    border-top: 1px solid #806747;
+    margin: 12px 0;
+    opacity: 0.8;
+}
+
+/* Untermenü */
+#nav .reisen-untermenue {
+    padding-top: 8px;
+}
+
+/* Tagesnavigation */
+#nav .nav-tage {
+    scrollbar-width: none;
+}
+
+#nav .nav-tage::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mobiler Menüknopf */
+#menuButton {
+    background: #493A2D;
+    color: #E3C99D;
+    border: 1px solid #806747;
+}
+
+#menuButton:hover {
+    background: #66523D;
+}
+
+
 
 .bildOval {
     object-fit: cover;
     border-radius: 50%;
 }
+
+
+

@@ -1,58 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reiseübersicht</title>
+    <title>Meine Reisen</title>
 
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylestartseite.css">
 </head>
+
 <body>
-<div id="menuButton" onclick="toggleMenu()">
-    ☰
-</div>
 
-<nav id="nav">
-
-    <div class="nav-oben">
-        <details class="reisen-dropdown">
-            <summary>Alle Reisen</summary>
-            <div class="reisen-untermenue" id="reisen-links"></div>
-        </details>
-        <hr>
+    <div id="menuButton" onclick="toggleMenu()">
+        ☰
     </div>
+
+    <!-- Linke Navigation bleibt erhalten -->
+    <nav id="nav">
+
+        <div class="nav-oben">
+            <details class="reisen-dropdown">
+                <summary>Alle Reisen</summary>
+                <div class="reisen-untermenue" id="reisen-links"></div>
+            </details>
+
+            <hr>
+        </div>
+
     </nav>
 
-<main class="reiseUebersicht">
+    <!-- Neue Reiseübersicht -->
+    <main class="startseite">
 
-       <div class="reiseKartenText">
-                <h2>2026:</h2>
-            </div> 
+        <!-- Großes Titelbild -->
+        <header class="startseiten-titel">
+            <div class="titel-kompass">✥</div>
 
-        <a href="2026SriLanka/index.html" class="reiseKarte">
-            <div class="reiseKartenText">
-                <h2>Sri Lanka</h2>
+            <div class="titel-inhalt">
+                <h1>Meine Reisen</h1>
             </div>
-        </a>
 
-        <a href="2026GB/index.html" class="reiseKarte">
-            <div class="reiseKartenText">
-                <h2>Northumbria & Edinburgh</h2>
-            </div>
-        </a>
+            <div class="titel-flugzeug">✈</div>
+        </header>
 
-        <a href="2026Iceland/index.html" class="reiseKarte">
-            <div class="reiseKartenText">
-                <h2>Island</h2>
+        <!-- Die Reisekarten werden automatisch erzeugt -->
+        <section class="reise-karten-bereich">
+
+            <div class="karten-ueberschrift">
+                <span>MEINE REISEZIELE</span>
+                <div></div>
             </div>
-        </a>
+
+            <div id="reise-karten" class="reise-karten">
+                <!-- Inhalt kommt aus startseite.js -->
+            </div>
+
+        </section>
+
+        <footer class="startseiten-footer">
+            <span></span>
+            <p>Die Welt entdecken ...</p>
+            <span>🌍</span>
+            <span></span>
+        </footer>
+
     </main>
 
-
-
-<script src="script.js"></script>
-<script src="reisen-navigation.js"></script>
+    <script src="script.js"></script>
+    <script src="reisen-navigation.js"></script>
+    <script src="startseite.js"></script>
 
 </body>
 </html>
