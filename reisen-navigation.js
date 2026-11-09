@@ -1,37 +1,21 @@
 const basisPfad = "/journeys/";
 
 
-
-const reisen = [
-    {
-        name: "Island",
-        link: "../2026Iceland/index.html"
-    },
-    {
-        name: "Großbritannien",
-        link: "../2026GB/index.html"
-    },
-    {
-        name: "Sri Lanka",
-        link: "../2026SriLanka/index.html"
-    }
-];
-
 const reiseJahre = [
-    {
-        jahr: "2026",
-        reisen: [
-            { name: "Sri Lanka", link: "2026SriLanka/index.html" },
-            { name: "Großbritannien", link: "2026GB/index.html" },
-            { name: "Island", link: "2026Iceland/index.html" }
-        ]
-    },
     {
         jahr: "2027",
         reisen: [
             { name: "Dummy", link: "2026SriLanka/index.html" },
         ]
-    }
+    },
+    {
+        jahr: "2026",
+        reisen: [
+            { name: "Island", link: "2026Iceland/index.html" },
+            { name: "Großbritannien", link: "2026GB/index.html" },
+            { name: "Sri Lanka", link: "2026SriLanka/index.html" },
+        ]
+    },
 ];
 
 
