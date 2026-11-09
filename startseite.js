@@ -100,7 +100,7 @@ function startseiteErstellen() {
 
         const marke = karte.querySelector(".briefmarke");
         const pass = karte.querySelector(".pass-stempel");
-        const post = karte.querySelector(".stempel-post");
+
 
         marke.style.top = reise.stempelOben;
         marke.style.left = reise.stempelLinks || "auto";

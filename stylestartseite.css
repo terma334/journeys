@@ -576,3 +576,27 @@
         font-size: 17px;
     }
 }
+
+/* TEST: Postkarten auf Smartphones sichtbar machen */
+
+@media (max-width: 768px) {
+
+    #reise-karten {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 100px;
+        outline: 2px solid red;
+    }
+
+    #reise-karten > a {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 290px !important;
+        max-width: 92% !important;
+    }
+
+}
