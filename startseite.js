@@ -10,7 +10,7 @@
         {
             name: "Island",
             jahr: "2026",
-            beschreibung: "Roadtrip mit Kerstin",
+            beschreibung: "Roadtrip mit Kerstin ",
             link: "2026Iceland/index.html",
             bild: "startseite/island.jpg",
             flagge: "https://flagcdn.com/w160/is.png",
