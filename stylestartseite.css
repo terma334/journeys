@@ -56,6 +56,7 @@
 }
 
 /* Island */
+
 .briefmarke-island {
     background: #dce5e9;
     border-color: #345b70;
@@ -69,6 +70,7 @@
 }
 
 /* Großbritannien */
+
 .briefmarke-uk {
     background: #f2e3d5;
     border-color: #9b4242;
@@ -82,6 +84,7 @@
 }
 
 /* Sri Lanka */
+
 .briefmarke-sri-lanka {
     background: #f5dfac;
     border-color: #9b6a22;
@@ -144,6 +147,7 @@
 }
 
 /* Unterschiedliche Stempelfarben */
+
 .pass-island {
     color: rgba(35,75,105,0.85);
     transform: rotate(-12deg);
@@ -303,6 +307,7 @@
 }
 
 /* Einzelne Postkarte */
+
 .startseiten-karte {
     position: relative;
     display: block;
@@ -348,6 +353,7 @@
 }
 
 /* Hover-Effekt */
+
 .startseiten-karte:hover {
     transform: rotate(0deg) translateY(-9px) scale(1.025);
     box-shadow: 4px 12px 22px rgba(0,0,0,0.23);
@@ -430,6 +436,7 @@
 
 /* =========================================
    WASSERZEICHEN – WELTKARTE
+   BLEIBT AUF DER STARTSEITE ERHALTEN
    ========================================= */
 
 .startseite::before {
@@ -454,29 +461,55 @@
 
 
 /* =========================================
-   WASSERZEICHEN – GLOBUS AUF DEN KARTEN
+   INDIVIDUELLE LÄNDER-WASSERZEICHEN
+   AUF DEN POSTKARTEN
    ========================================= */
+
+/* Gemeinsame Gestaltung */
 
 .startseiten-karte::before {
     content: "";
     position: absolute;
     z-index: 0;
-    right: 8px;
-    bottom: 18px;
-    width: 105px;
-    height: 105px;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23785c38' stroke-width='1.4'%3E%3Ccircle cx='50' cy='50' r='43'/%3E%3Cellipse cx='50' cy='50' rx='19' ry='43'/%3E%3Cellipse cx='50' cy='50' rx='43' ry='17'/%3E%3Cpath d='M9 50h82M50 7v86M17 25h66M17 75h66'/%3E%3C/svg%3E");
+    right: 15px;
+    bottom: 15px;
+    width: 100px;
+    height: 100px;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-    opacity: 0.12;
+    opacity: 0.50;
     pointer-events: none;
 }
 
+/* Island */
+
+.startseiten-karte.island::before {
+    background-image: url("startseite/island-umriss.svg");
+        opacity: 0.70;
+}
+
+/* Großbritannien */
+
+.startseiten-karte.uk::before {
+    background-image: url("startseite/grossbritannien-umriss.svg");
+    opacity: 0.30;
+}
+
+/* Sri Lanka */
+
+.startseiten-karte.sri-lanka::before {
+    background-image: url("startseite/sri-lanka-umriss.svg");
+    right: 200px;
+    bottom: 1px;
+    width: 130px;
+    height: 130px;
+}
+
 /* Bild und Text über dem Wasserzeichen */
+
 .startseiten-karte .karten-bild,
 .startseiten-karte .karten-information {
     position: relative;
@@ -575,5 +608,11 @@
     .startseiten-footer p {
         font-size: 17px;
     }
-}
 
+    .startseiten-karte::before {
+        width: 115px;
+        height: 90px;
+        right: 12px;
+        bottom: 12px;
+    }
+}

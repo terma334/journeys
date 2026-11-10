@@ -480,6 +480,9 @@ figcaption{
         padding-top:80px;
 
     }
+    #nav .nav-oben {
+    padding-top: 30px;
+    }
 }
 .sterne{
     color:gold;
