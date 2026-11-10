@@ -20,13 +20,53 @@ tagesTrenner("Tag 2 <br> Negombo -> Udawalawe", "Galle", "★★★★★");
 galerieErstellen("galerie2c", "pictures/Tag2/c", 7);
 
 tagesTrenner("Tag 2 <br> Negombo -> Udawalawe", "Zwischenstopps", "★★★★★");
-galerieErstellen("galerie2d", "pictures/Tag2/d", 8);
-
+galerieErstellen("galerie2d", "pictures/Tag2/d", 8, [
+    "",
+    "Bindenwaran (Water Monitor Lizard)",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+]);
 
 // TAG 3
 
 tagesTrenner("Tag 3 <br> Udawalawe -> Ella", "Udawalawe National Park Safari", "★★★★★");
-galerieErstellen("galerie3a", "pictures/Tag3/a", 31);
+galerieErstellen("galerie3a", "pictures/Tag3/a", 31, [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Goldschakal (Golden Jackal",
+    "",
+    "",
+    "",
+    "",
+    "Grünspint (Green Bee-eater)",
+    "",
+    "",
+    "Sumpfkrokodil (Swamp Crocodile)",
+    "Sumpfkrokodil (Swamp Crocodile)",
+    "",
+    "Buntstorch (Painted Stork)",
+    "Buntstorch (Painted Stork)",
+    "",
+    "Bengalwaran (Bengal Monitor)",
+    "Graukopf-Fischadler (Grey-headed Fish Eagle)"
+]);
 
 tagesTrenner("Tag 3 <br> Udawalawe -> Ella", "Diyaluma Falls", "★★★★★");
 galerieErstellen("galerie3b", "pictures/Tag3/b", 26);
@@ -78,7 +118,23 @@ galerieErstellen("galerie7b", "pictures/Tag7/b", 21);
 // TAG 8
 
 tagesTrenner("Tag 8 <br> Sigirya", "Lion Rock", "★★★★★");
-galerieErstellen("galerie8a", "pictures/Tag8/a", 15);
+galerieErstellen("galerie8a", "pictures/Tag8/a", 15, [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Ceylon-Hutaffe (Toque Macaque)",
+    "",
+    "",
+    ""
+]);
 
 tagesTrenner("Tag 8 <br> Sigirya", "Gamini Gem & Jewellery", "★☆☆☆☆");
 galerieErstellen("galerie8b", "pictures/Tag8/b", 2);
@@ -110,8 +166,22 @@ galerieErstellen("galerie10c", "pictures/Tag10/c", 7);
 // TAG 11
 
 tagesTrenner("Tag 11 <br> Nilaveli -> Negombo", "Anuradhapura Temples", "★★★☆☆");
-galerieErstellen("galerie11", "pictures/Tag11", 14);
-
+galerieErstellen("galerie11", "pictures/Tag11", 14, [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Hanuman-Langure (Ceylon-Hulman)",
+    "",
+    "",
+    "",
+]);
 
 // TAG 12
 
@@ -122,7 +192,41 @@ galerieErstellen("galerie12", "pictures/Tag12", 2);
 // TAG 13
 
 tagesTrenner("Tag 13 <br> Maragahawewa", "Wilpattu National Park Safari", "★★★☆☆");
-galerieErstellen("galerie13", "pictures/Tag13", 33);
+galerieErstellen("galerie13", "pictures/Tag13", 33, [
+    "Buntstorch (Painted Stork)",
+    "Buntstorch (Painted Stork)",
+    "Buntstorch (Painted Stork)",
+    "Axishirsch (Chital)",
+    "Malabarhornvogel (Malabar Pied Hornbill)",
+    "Zwergmungo (Common Dwarf Mongoose)",
+    "Malabarhornvogel (Malabar Pied Hornbill)",
+    "Haubenschlangenadler (Crested Serpent Eagle)",
+    "Haubenschlangenadler (Crested Serpent Eagle)",
+    "Haubenhabicht (Crested Goshaw)",
+    "Hanuman-Langure (Ceylon-Hulman)",
+    "Seidenreiher (Little Egret)",
+    "Wasserbüffel (Water Buffalo)",
+    "Rotlappenkiebitz (Red-wattled Lapwing)",
+    "Seidenreiher (Little Egret)",
+    "Zwerghirsch (Muntjac)",
+    "Ceylon-Hutaffe (Toque macaque)",
+    "Weißkehlliest (White-throated Kingfisher)",
+    "Blauer Pfauhahn (Indian Peacock)",
+    "Ceylon-Hutaffe (Toque Macaque)",
+    "Ceylon-Hutaffe (Toque Macaque)",
+    "Ceylon-Hutaffe (Toque Macaque)",
+    "Ceylon-Hutaffe (Toque Macaque)",
+    "Sumpfkrokodil (Swamp Crocodile)",
+    "Graureiher (Grey Heron)",
+    "",
+    "",
+    "Bienenfresser (Bee-eater)",
+    "Spornpieper (Richard's Pipit)",
+    "Schwarzkopfibis ( Black-headed Ibis)",
+    "Wasserbüffel (Water Buffalo)",
+    "Leopard",
+    "Leopard"
+]);
 
 
 // TAG 14
