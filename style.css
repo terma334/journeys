@@ -500,9 +500,9 @@ figcaption{
 
     }
 
-    #nav .nav-oben {
-    padding-top: 80px;
-    }
+#nav .reisen-dropdown {
+    margin-top: 30px;
+}
 }
 .sterne{
     color:gold;
