@@ -168,6 +168,25 @@ main:not(.startseite)::before {
     transform: rotate(180deg);
 }
 
+/* Reiseübersicht im gleichen Stil wie die Jahreszahlen */
+
+.reiseuebersicht-link {
+    display: block;
+    margin: 8px 0 8px 10px;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: #d4a017;
+    text-decoration: none;
+    border: 1px solid rgba(212, 160, 23, 0.35);
+    border-radius: 5px;
+    background: rgba(212, 160, 23, 0.06);
+}
+
+.reiseuebersicht-link:hover {
+    background: rgba(212, 160, 23, 0.14);
+}
+
+
 /* Einzelne Reisen */
 .reise-jahr-links {
     display: flex;
@@ -480,8 +499,9 @@ figcaption{
         padding-top:80px;
 
     }
+
     #nav .nav-oben {
-    padding-top: 30px;
+    padding-top: 80px;
     }
 }
 .sterne{
