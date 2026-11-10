@@ -1,0 +1,618 @@
+
+/* =========================================
+   BRIEFMARKEN
+   ========================================= */
+
+.briefmarke {
+    position: absolute;
+    z-index: 4;
+    width: 75px;
+    height: 80px;
+    padding: 7px;
+    box-sizing: border-box;
+    background: #f5ead0;
+    border: 2px dashed #a18a65;
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marken-inhalt {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #b5a17e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255,255,255,0.25);
+}
+
+.marken-inhalt img {
+    display: block;
+    width: 52px;
+    height: 43px;
+    object-fit: cover;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.marken-inhalt span {
+    font-family: Georgia, serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #514431;
+    text-align: center;
+}
+
+.marken-wert {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    font-size: 2px;
+    color: #8c6840;
+}
+
+/* Island */
+
+.briefmarke-island {
+    background: #dce5e9;
+    border-color: #345b70;
+    outline: 1px solid #345b70;
+    outline-offset: -5px;
+    transform: rotate(-7deg);
+}
+
+.briefmarke-island .marken-inhalt {
+    border-color: #67899a;
+}
+
+/* Großbritannien */
+
+.briefmarke-uk {
+    background: #f2e3d5;
+    border-color: #9b4242;
+    outline: 1px solid #9b4242;
+    outline-offset: -5px;
+    transform: rotate(5deg);
+}
+
+.briefmarke-uk .marken-inhalt {
+    border-color: #a85b55;
+}
+
+/* Sri Lanka */
+
+.briefmarke-sri-lanka {
+    background: #f5dfac;
+    border-color: #9b6a22;
+    outline: 1px solid #9b6a22;
+    outline-offset: -5px;
+    transform: rotate(-2deg);
+}
+
+.briefmarke-sri-lanka .marken-inhalt {
+    border-color: #b18a45;
+}
+
+
+/* =========================================
+   RUNDE REISEPASS-STEMPEL
+   ========================================= */
+
+.pass-stempel {
+    position: absolute;
+    z-index: 5;
+    width: 83px;
+    height: 83px;
+    border: 3px double rgba(30,55,75,0.8);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(30,55,75,0.85);
+    background: rgba(245,239,222,0.2);
+    transform: rotate(10deg);
+    box-sizing: border-box;
+}
+
+.pass-stempel::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 1px dashed currentColor;
+    border-radius: 50%;
+}
+
+.pass-symbol {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.pass-text {
+    font-family: Georgia, serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
+
+.pass-land {
+    font-size: 6px;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+/* Unterschiedliche Stempelfarben */
+
+.pass-island {
+    color: rgba(35,75,105,0.85);
+    transform: rotate(-12deg);
+}
+
+.pass-uk {
+    color: rgba(155,55,55,0.85);
+    border-color: rgba(155,55,55,0.85);
+    transform: rotate(12deg);
+}
+
+.pass-sri-lanka {
+    color: rgba(135,85,25,0.9);
+    border-color: rgba(135,85,25,0.9);
+    transform: rotate(-9deg);
+}
+
+
+/* =========================================
+   STARTSEITE
+   ========================================= */
+
+.startseite {
+    position: relative;
+    isolation: isolate;
+    margin-left: 220px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    max-width: 1800px;
+    min-height: 100vh;
+
+    background-color: #e7dcc5;
+    background-image:
+        radial-gradient(
+            ellipse at 15% 15%,
+            rgba(255,255,255,0.65),
+            transparent 40%
+        ),
+        radial-gradient(
+            ellipse at 85% 80%,
+            rgba(143,108,65,0.13),
+            transparent 45%
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(105,78,43,0.025) 0px,
+            transparent 1px,
+            transparent 4px
+        );
+}
+
+
+/* =========================================
+   TITELBEREICH
+   ========================================= */
+
+.startseiten-titel {
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 18px;
+    margin-bottom: 35px;
+
+    background:
+        linear-gradient(
+            rgba(0, 25, 55, 0.18),
+            rgba(0, 25, 55, 0.35)
+        ),
+        url("titelbild.jpg");
+
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+}
+
+.titel-inhalt {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+}
+
+.titel-inhalt h1 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 6vw, 76px);
+    font-style: italic;
+    margin: 0 0 10px;
+    text-shadow: 2px 3px 6px rgba(0,0,0,0.6);
+}
+
+.titel-inhalt p {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(17px, 2vw, 25px);
+    font-style: italic;
+    margin: 0;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.8);
+}
+
+.titel-kompass {
+    position: absolute;
+    left: 35px;
+    top: 25px;
+    color: white;
+    font-size: 65px;
+    opacity: 0.8;
+}
+
+.titel-flugzeug {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    color: white;
+    font-size: 45px;
+    transform: rotate(-15deg);
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   ÜBERSCHRIFT ÜBER DEN KARTEN
+   ========================================= */
+
+.karten-ueberschrift {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 5px 22px;
+    color: #24415d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.karten-ueberschrift div {
+    flex: 1;
+    height: 1px;
+    background: #c5b99f;
+}
+
+
+/* =========================================
+   REISEKARTEN
+   ========================================= */
+
+.reise-karten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 55px 35px;
+    padding: 35px 15px 65px;
+}
+
+/* Einzelne Postkarte */
+
+.startseiten-karte {
+    position: relative;
+    display: block;
+    width: min(320px, 100%);
+    min-width: 0;
+    padding: 12px 12px 18px;
+    box-sizing: border-box;
+
+    color: #333;
+    text-decoration: none;
+
+    background-color: #f0e5cf;
+    background-image:
+        radial-gradient(
+            ellipse at 20% 20%,
+            rgba(255,255,255,0.55),
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at 90% 90%,
+            rgba(150,112,64,0.10),
+            transparent 55%
+        ),
+        repeating-linear-gradient(
+            45deg,
+            rgba(110,80,45,0.025) 0px,
+            transparent 1px,
+            transparent 5px
+        );
+
+    border: 1px solid #c9b99d;
+    outline: 1px solid rgba(145,112,69,0.25);
+    outline-offset: -5px;
+
+    box-shadow:
+        2px 5px 9px rgba(70,50,25,0.18),
+        0 1px 3px rgba(70,50,25,0.12);
+
+    overflow: hidden;
+
+    transform: rotate(var(--karten-winkel, 0deg));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover-Effekt */
+
+.startseiten-karte:hover {
+    transform: rotate(0deg) translateY(-9px) scale(1.025);
+    box-shadow: 4px 12px 22px rgba(0,0,0,0.23);
+    z-index: 10;
+}
+
+
+/* =========================================
+   BILDER AUF DEN POSTKARTEN
+   ========================================= */
+
+.startseiten-karte .karten-bild {
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+    background: #ddd;
+    border: 1px solid #c5b394;
+    box-shadow: 0 1px 3px rgba(80,60,30,0.15);
+}
+
+.startseiten-karte .karten-bild > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.startseiten-karte:hover .karten-bild > img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   TEXTBEREICH DER POSTKARTEN
+   ========================================= */
+
+.startseiten-karte .karten-information {
+    position: relative;
+    z-index: 1;
+    padding: 14px 5px 3px;
+    text-align: center;
+    background: transparent;
+}
+
+.startseiten-karte .karten-information h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+    font-weight: normal;
+    color: #51412d;
+    margin: 0 0 7px;
+}
+
+.startseiten-karte .karten-information p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #77664d;
+    font-size: 13px;
+    margin: 0 0 12px;
+}
+
+
+/* =========================================
+   REISE ANSEHEN
+   ========================================= */
+
+.startseiten-karte .reise-ansehen {
+    display: inline-block;
+    color: #93613b;
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+.reise-ansehen span {
+    margin-left: 8px;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   WASSERZEICHEN – WELTKARTE
+   BLEIBT AUF DER STARTSEITE ERHALTEN
+   ========================================= */
+
+.startseite::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 550px;
+
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.055;
+    filter: sepia(1);
+    pointer-events: none;
+}
+
+
+/* =========================================
+   INDIVIDUELLE LÄNDER-WASSERZEICHEN
+   AUF DEN POSTKARTEN
+   ========================================= */
+
+/* Gemeinsame Gestaltung */
+
+.startseiten-karte::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    right: 15px;
+    bottom: 15px;
+    width: 100px;
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.50;
+    pointer-events: none;
+}
+
+/* Island */
+
+.startseiten-karte.island::before {
+    background-image: url("startseite/island-umriss.svg");
+        opacity: 0.70;
+}
+
+/* Großbritannien */
+
+.startseiten-karte.uk::before {
+    background-image: url("startseite/grossbritannien-umriss.svg");
+    opacity: 0.30;
+}
+
+/* Sri Lanka */
+
+.startseiten-karte.sri-lanka::before {
+    background-image: url("startseite/sri-lanka-umriss.svg");
+    right: 200px;
+    bottom: 1px;
+    width: 130px;
+    height: 130px;
+}
+
+/* Bild und Text über dem Wasserzeichen */
+
+.startseiten-karte .karten-bild,
+.startseiten-karte .karten-information {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   FUSSZEILE
+   ========================================= */
+
+.startseiten-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0 15px;
+    color: #24415d;
+}
+
+.startseiten-footer p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 23px;
+    white-space: nowrap;
+}
+
+.startseiten-footer > span:first-child,
+.startseiten-footer > span:last-child {
+    height: 1px;
+    flex: 1;
+    background: #b8a98e;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+    .reise-karten {
+        gap: 45px 25px;
+    }
+}
+
+
+/* =========================================
+   SMARTPHONE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .startseite {
+        margin-left: 0;
+        padding: 80px 15px 20px;
+    }
+
+    .startseiten-titel {
+        min-height: 230px;
+        border-radius: 12px;
+    }
+
+    .titel-kompass {
+        left: 15px;
+        top: 12px;
+        font-size: 38px;
+    }
+
+    .titel-flugzeug {
+        right: 15px;
+        top: 15px;
+        font-size: 30px;
+    }
+
+    .reise-karten {
+        gap: 35px 15px;
+        padding: 25px 5px 45px;
+    }
+
+    .startseiten-karte {
+        width: min(290px, 92%);
+    }
+
+    .startseiten-karte .karten-bild {
+        height: 190px;
+    }
+
+    .startseiten-karte .karten-information h2 {
+        font-size: 25px;
+    }
+
+    .startseiten-footer {
+        gap: 10px;
+    }
+
+    .startseiten-footer p {
+        font-size: 17px;
+    }
+
+    .startseiten-karte::before {
+        width: 115px;
+        height: 90px;
+        right: 12px;
+        bottom: 12px;
+    }
+}
