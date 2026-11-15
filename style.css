@@ -501,7 +501,7 @@ figcaption{
     }
 
 #nav .reisen-dropdown {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 }
 .sterne{
@@ -548,7 +548,7 @@ figcaption{
 
     box-sizing: border-box;
 
-    background-image: url("pictures/map.png");
+background-image: var(--reise-karte, none);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -760,18 +760,19 @@ figcaption{
     border-right: 2px solid #806747;
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.18);
     color: #E9D9BB;
+    font-size: 12px
 }
 
 /* Oberer Navigationsbereich */
 #nav .nav-oben {
-    padding: 12px;
+    padding: 8px;
 }
 
 /* Überschrift Alle Reisen */
 #nav .reisen-dropdown summary {
     color: #E3C99D;
     font-weight: bold;
-    padding: 12px;
+    padding: 8px;
     cursor: pointer;
     list-style: none;
     border: 1px solid #806747;
