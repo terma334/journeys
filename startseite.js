@@ -120,7 +120,7 @@
             jahr: "2024",
             beschreibung: "Strandurlaub",
             link: "https://terma334.github.io/old/2024Turkei/index.html",
-            bild: "https://terma334.github.io/old/2024Turkei/pictures/Tag2/6.jpg",
+            bild: "https://terma334.github.io/old/2024Turkei/pictures/Tag1/1.jpg",
             flagge: "https://flagcdn.com/w160/tr.png",
             stempelText: "Türkiye",
             stempelTyp: "türkei",
