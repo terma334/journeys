@@ -11,10 +11,10 @@
             name: "Island",
             jahr: "2026",
             beschreibung: "Roadtrip mit Kerstin ",
-            link: "2026Iceland/index.html",
-            bild: "2026Iceland/pictures/Tag6/2.jpg",
+            link: "https://terma334.github.io/2026Iceland/index.html",
+            bild: "https://terma334.github.io/pictures/Tag6/2.jpg",
             flagge: "https://flagcdn.com/w160/is.png",
-            stempelText: "ICELAND",
+            stempelText: "Ísland",
             stempelTyp: "island",
             symbol: "❄",
             winkel: "-3deg",
@@ -29,8 +29,8 @@
             name: "Northumbria & Edingburgh",
             jahr: "2026",
             beschreibung: "Military Tattoo",
-            link: "2026GB/index.html",
-            bild: "2026GB/pictures/Tag2/b/9.jpg",
+            link: "https://terma334.github.io/2026GB/index.html",
+            bild: "https://terma334.github.io/2026GB/pictures/Tag2/b/9.jpg",
             flagge: "https://flagcdn.com/w160/gb.png",
             stempelText: "UNITED KINGDOM",
             stempelTyp: "uk",
@@ -47,10 +47,10 @@
             name: "Sri Lanka",
             jahr: "2026",
             beschreibung: "Weroad 360°",
-            link: "2026SriLanka/index.html",
-            bild: "2026SriLanka/pictures/Tag3/a/6.jpg",
+            link: "https://terma334.github.io/2026SriLanka/index.html",
+            bild: "https://terma334.github.io/2026SriLanka/pictures/Tag3/a/6.jpg",
             flagge: "https://flagcdn.com/w160/lk.png",
-            stempelText: "SRI LANKA",
+            stempelText: "ශ්‍රී ලංකා",
             stempelTyp: "sri-lanka",
             symbol: "🐘",
             winkel: "-2deg",
@@ -59,7 +59,150 @@
             stempelRechts: "",
             passOben: "25px",
             passRechts: "155px"
-        }
+        },
+
+        {
+            name: "London",
+            jahr: "2025",
+            beschreibung: "Citytrip",
+            link: "https://terma334.github.io/2025London/index.html",
+            bild: "https://terma334.github.io/2025London/pictures/Tag2/8.jpg",
+            flagge: "https://flagcdn.com/w160/gb.png",
+            stempelText: "LONDON",
+            stempelTyp: "london",
+            symbolBild: "startseite/stempel/london-stempel.svg",
+            winkel: "-2deg",
+            stempelOben: "8px",
+            stempelLinks: "5px",
+            stempelRechts: "",
+            passOben: "25px",
+            passRechts: "155px"
+        },
+
+        {
+            name: "Teneriffa",
+            jahr: "2025",
+            beschreibung: "",
+            link: "https://terma334.github.io/2025Teneriffa/index.html",
+            bild: "https://terma334.github.io/2025Teneriffa/pictures/Tag4/2.jpg",
+            flagge: "https://flagcdn.com/w160/es.png",
+            stempelText: "TENERIFE",
+            stempelTyp: "teneriffa",
+            symbolBild: "startseite/stempel/teneriffa-stempel.svg",
+            winkel: "-10deg",
+            stempelOben: "8px",
+            stempelLinks: "200px",
+            stempelRechts: "",
+            passOben: "25px",
+            passRechts: "20px"
+        },
+
+        {
+            name: "Finstermühle",
+            jahr: "2025",
+            beschreibung: "Family°",
+            link: "https://terma334.github.io/2025Finstermuhle/index.html",
+            bild: "https://terma334.github.io/2025Finstermuhle/pictures/Tag2/6.jpg",
+            flagge: "https://flagcdn.com/w160/de.png",
+            stempelText: "Finster mühle",
+            stempelTyp: "finstermühle",
+            symbolBild: "startseite/stempel/finstermuhle-stempel.svg",
+            winkel: "-2deg",
+            stempelOben: "8px",
+            stempelLinks: "5px",
+            stempelRechts: "",
+            passOben: "8px",
+            passRechts: "180px"
+        },
+
+        {
+            name: "Türkei",
+            jahr: "2024",
+            beschreibung: "Strandurlaub",
+            link: "https://terma334.github.io/old/2024Turkei/index.html",
+            bild: "https://terma334.github.io/old/2024Turkei/pictures/Tag2/6.jpg",
+            flagge: "https://flagcdn.com/w160/tr.png",
+            stempelText: "Türkiye",
+            stempelTyp: "türkei",
+            symbolBild: "startseite/stempel/turkei-stempel.svg",
+            winkel: "-2deg",
+            stempelOben: "8px",
+            stempelLinks: "5px",
+            stempelRechts: "",
+            passOben: "25px",
+            passRechts: "155px"
+        },
+        {
+            name: "Holland",
+            jahr: "2024",
+            beschreibung: "Amsterdam & Texel",
+            link: "https://terma334.github.io/old/2024Holland/index.html",
+            bild: "https://terma334.github.io/old/2024Holland/pictures/Tag2/6.jpg",
+            flagge: "https://flagcdn.com/w160/nl.png",
+            stempelText: "NEDERLAND",
+            stempelTyp: "holland",
+            symbolBild: "startseite/stempel/holland-stempel.svg",
+            winkel: "-2deg",
+            stempelOben: "8px",
+            stempelLinks: "5px",
+            stempelRechts: "",
+            passOben: "25px",
+            passRechts: "155px"
+        },
+
+        {
+            name: "Hamburg",
+            jahr: "2023",
+            beschreibung: "König der Löwen",
+            link: "https://terma334.github.io/old/2023Hamburg/index.html",
+            bild: "https://terma334.github.io/old/2023Hamburg/pictures/Tag2/6.jpg",
+            flagge: "https://flagcdn.com/w160/de.png",
+            stempelText: "HH",
+            stempelTyp: "hamburg",
+            symbolBild: "startseite/stempel/hamburg-stempel.svg",
+            winkel: "-2deg",
+            stempelOben: "8px",
+            stempelLinks: "5px",
+            stempelRechts: "",
+            passOben: "25px",
+            passRechts: "155px"
+        },
+
+        {
+            name: "Azoren",
+            jahr: "2022",
+            beschreibung: "Inselhopping",
+            link: "https://terma334.github.io/old/2022Azoren/index.html",
+            bild: "https://terma334.github.io/old/2022Azoren/pictures/Tag2/6.jpg",
+            flagge: "https://flagcdn.com/w160/pt.png",
+            stempelText: "Açores",
+            stempelTyp: "azoren",
+            symbolBild: "startseite/stempel/azoren-stempel.svg",
+            winkel: "-2deg",
+            stempelOben: "8px",
+            stempelLinks: "5px",
+            stempelRechts: "",
+            passOben: "25px",
+            passRechts: "155px"
+        },
+
+        {
+            name: "Belgien",
+            jahr: "2021",
+            beschreibung: "Waterloo",
+            link: "https://terma334.github.io/old/2021Belgien/index.html",
+            bild: "https://terma334.github.io/old/2021Belgien/pictures/Tag2/6.jpg",
+            flagge: "https://flagcdn.com/w160/be.png",
+            stempelText: "BELGIQUE",
+            stempelTyp: "belgien",
+            symbolBild: "startseite/stempel/belgien-stempel.svg",
+            winkel: "-2deg",
+            stempelOben: "8px",
+            stempelLinks: "5px",
+            stempelRechts: "",
+            passOben: "25px",
+            passRechts: "155px"
+        },
 
     ];
 
@@ -74,12 +217,14 @@
 
         // Falls kein Kartenbereich vorhanden ist:
         // Funktion ohne Fehler beenden.
+
         if (!container) {
             console.warn("Reisekarten-Container nicht gefunden.");
             return;
         }
 
         // Vorhandene Karten entfernen
+
         container.replaceChildren();
 
         startseitenReisen.forEach(function (reise) {
@@ -96,7 +241,31 @@
                     reise.winkel
                 );
 
-                // Karteninhalt erzeugen
+
+                // =================================
+                // STEMPELSYMBOL ERZEUGEN
+                // =================================
+
+                const symbolHtml = reise.symbolBild
+
+                    ? `
+                        <img
+                            class="pass-symbol pass-symbol-bild"
+                            src="${reise.symbolBild}"
+                            alt=""
+                            style="width:52px;height:52px;object-fit:contain;"
+                        >
+                    `
+
+                    : `
+                        <span class="pass-symbol">${reise.symbol || ""}</span>
+                    `;
+
+
+                // =================================
+                // KARTENINHALT ERZEUGEN
+                // =================================
+
                 karte.innerHTML = `
 
                     <div class="karten-bild">
@@ -127,9 +296,9 @@
 
                         <div class="pass-stempel pass-${reise.stempelTyp}">
 
-                            <span class="pass-symbol">${reise.symbol}</span>
+                            ${symbolHtml}
 
-                            <span class="pass-text">2026</span>
+                            <span class="pass-text">${reise.jahr}</span>
 
                             <span class="pass-land">${reise.stempelText}</span>
 
@@ -185,7 +354,9 @@
 
 
                 // Karte zum Kartenbereich hinzufügen
+
                 container.appendChild(karte);
+
 
             } catch (fehler) {
 

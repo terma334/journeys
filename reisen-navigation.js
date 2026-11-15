@@ -1,21 +1,40 @@
-const basisPfad = "/journeys/";
+const basisPfad = "https://terma334.github.io/journeys/";
 
 
 const reiseJahre = [
     {
         jahr: "2027",
         reisen: [
-            { name: "Dummy", link: "2026SriLanka/index.html" },
+            { name: "Dummy", link: "https://terma334.github.io/2026SriLanka/index.html" },
         ]
     },
     {
         jahr: "2026",
         reisen: [
-            { name: "Island", link: "2026Iceland/index.html" },
-            { name: "Großbritannien", link: "2026GB/index.html" },
-            { name: "Sri Lanka", link: "2026SriLanka/index.html" },
+            { name: "Island", link: "https://terma334.github.io/2026Island/index.html" },
+            { name: "Großbritannien", link: "https://terma334.github.io/2026GB/index.html" },
+            { name: "Sri Lanka", link: "https://terma334.github.io/2026SriLanka/index.html" },
         ]
     },
+    {
+        jahr: "2025",
+        reisen: [
+            { name: "London", link: "https://terma334.github.io/2025Teneriffa/index.html" },
+            { name: "Teneriffa", link: "https://terma334.github.io/2025London/index.html" },
+            { name: "Finstermühle", link: "https://terma334.github.io/2025Finstermühle/index.html" },
+        ]
+    },
+    {
+        jahr: "2024-2021",
+        reisen: [
+            { name: "Türkei", link: "https://terma334.github.io/old/2024Turkei/index.html" },
+            { name: "Holland", link: "https://terma334.github.io/old/2024Holland/index.html" },
+            { name: "Hamburg", link: "https://terma334.github.io/old/2023Hamburg/index.html" },
+            { name: "Azoren", link: "https://terma334.github.io/old/2022Azoren/index.html" },
+            { name: "Belgien", link: "https://terma334.github.io/old/2021Belgien/index.html" },
+        ]
+    },
+
 ];
 
 
