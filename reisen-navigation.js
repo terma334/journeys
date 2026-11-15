@@ -1,5 +1,5 @@
-const basisPfad = "https://terma334.github.io/journeys/";
 
+const basisPfad = "https://terma334.github.io/journeys/";
 
 const reiseJahre = [
     {
@@ -19,8 +19,8 @@ const reiseJahre = [
     {
         jahr: "2025",
         reisen: [
-            { name: "London", link: "https://terma334.github.io/2025Teneriffa/index.html" },
-            { name: "Teneriffa", link: "https://terma334.github.io/2025London/index.html" },
+            { name: "London", link: "https://terma334.github.io/2025London/index.html" },
+            { name: "Teneriffa", link: "https://terma334.github.io/2025Teneriffa/index.html" },
             { name: "Finstermühle", link: "https://terma334.github.io/2025Finstermühle/index.html" },
         ]
     },
@@ -34,11 +34,7 @@ const reiseJahre = [
             { name: "Belgien", link: "https://terma334.github.io/old/2021Belgien/index.html" },
         ]
     },
-
 ];
-
-
-
 
 function reisenNavigationErstellen() {
 
@@ -50,9 +46,7 @@ function reisenNavigationErstellen() {
         <a href="${basisPfad}index.html"
            class="reiseuebersicht-link"
            onclick="toggleMenu()">
-
             Reiseübersicht
-
         </a>
     `;
 
@@ -64,7 +58,6 @@ function reisenNavigationErstellen() {
         details.dataset.jahr = gruppe.jahr;
 
         // Gespeicherten Zustand wiederherstellen
-
         details.open = localStorage.getItem(
             "reisejahr-" + gruppe.jahr
         ) === "true";
@@ -80,7 +73,9 @@ function reisenNavigationErstellen() {
 
             const link = document.createElement("a");
 
-            link.href = basisPfad + reise.link;
+            // Einzelne Reise direkt über ihre vollständige URL aufrufen
+            link.href = reise.link;
+
             link.textContent = reise.name;
             link.onclick = toggleMenu;
 
@@ -89,7 +84,6 @@ function reisenNavigationErstellen() {
         });
 
         // Änderungen am Aufklappzustand speichern
-
         details.addEventListener("toggle", () => {
 
             localStorage.setItem(
@@ -105,6 +99,4 @@ function reisenNavigationErstellen() {
 
 }
 
-
 document.addEventListener("DOMContentLoaded", reisenNavigationErstellen);
-
