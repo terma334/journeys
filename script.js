@@ -189,30 +189,42 @@ function openLightbox(index) {
     grossesVideoElement.removeAttribute("src");
     grossesVideoElement.load();
 
-    // TAGES-TRENNER
-    if (eintrag.typ === "trenner") {
-        if (eintrag.datei) {
-            grossesBildElement.src = eintrag.datei;
-            grossesBildElement.style.display = "block";
-        }
+// TAGES-TRENNER
+if (eintrag.typ === "trenner") {
 
-        beschreibungElement.innerHTML =
-            '<div class="tagesTrenner">' +
-                '<div class="tagesTrennerTextBox">' +
-                    '<div class="tagesTrennerTitel">' +
-                        eintrag.titel +
-                    '</div>' +
-                    '<div class="tagesTrennerText">' +
-                        eintrag.text +
-                    '</div>' +
-                    (eintrag.sterne
-                        ? '<div class="tagesTrennerSterne">' +
-                            eintrag.sterne +
-                          '</div>'
-                        : '') +
+    grossesBildElement.style.display = "none";
+
+    beschreibungElement.innerHTML =
+        '<div class="tagesTrenner">' +
+
+            '<div class="tagesTrennerTextBox">' +
+
+                '<div class="tagesTrennerTitel">' +
+                    eintrag.titel +
                 '</div>' +
-            '</div>';
-    }
+
+                '<div class="tagesTrennerText">' +
+                    eintrag.text +
+                '</div>' +
+
+                (eintrag.sterne
+                    ? '<div class="tagesTrennerSterne">' +
+                        eintrag.sterne +
+                      '</div>'
+                    : '') +
+
+            '</div>' +
+
+            (eintrag.datei
+                ? '<div class="tagesTrennerKartenBereich">' +
+                    '<img class="tagesTrennerKarte" src="' +
+                        eintrag.datei +
+                        '" alt="' + eintrag.titel + '">' +
+                  '</div>'
+                : '') +
+
+        '</div>';
+}
 
     // VIDEO
     else if (eintrag.typ === "video") {
@@ -440,3 +452,4 @@ document.getElementById("grossesBild").addEventListener("click", function(e) {
     zoomWechseln();
 
 });
+
