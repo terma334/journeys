@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" role="img" aria-label="Historisches Mühlrad">
+<g fill="none" stroke="#666" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="100" cy="79" r="54"/><circle cx="100" cy="79" r="45"/>
+<circle cx="100" cy="79" r="10"/><circle cx="100" cy="79" r="3"/>
+<path d="M100 25V69 M100 89V133 M46 79H90 M110 79H154 M62 41L93 72 M107 86L138 117 M138 41L107 72 M93 86L62 117"/>
+<path d="M91 23H109V34H91Z M91 124H109V135H91Z M44 70V88H55V70Z M145 70H156V88H145Z"/>
+<path d="M56 37L68 29L75 39L63 47Z M125 119L137 111L144 121L132 129Z M125 39L132 29L144 37L137 47Z M56 121L63 111L75 119L68 129Z"/>
+<path d="M20 145Q30 139 40 145T60 145T80 145T100 145T120 145T140 145T160 145T180 145"/>
+</g></svg>

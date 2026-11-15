@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" role="img" aria-label="Teide mit Sonne">
+<g fill="none" stroke="#666" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="145" cy="42" r="17"/>
+<path d="M145 13V5 M145 79V71 M116 42H108 M182 42H174 M124.5 21.5L118.5 15.5 M171.5 68.5L165.5 62.5 M165.5 21.5L171.5 15.5 M118.5 68.5L124.5 62.5"/>
+<path d="M15 123L48 103L68 112L91 91"/>
+<path d="M24 139L54 117L76 92L92 70L103 51L111 68L121 83L132 102L150 119L179 139"/>
+<path d="M92 70L103 51L111 68L104 65L99 72 M54 117L76 111L91 91 M121 83L115 105L132 119"/>
+<path d="M12 139H188"/>
+</g></svg>

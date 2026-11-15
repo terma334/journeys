@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" role="img" aria-label="Big Ben">
+<g fill="none" stroke="#666" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M35 145H165 M67 145V63L72 57H128L133 63V145 M73 72H127 M73 133H127"/>
+<path d="M83 145V119Q100 101 117 119V145 M89 145V122 M111 145V122"/>
+<path d="M63 62L70 51H130L137 62Z M70 51V29H130V51"/>
+<circle cx="100" cy="40" r="17"/><circle cx="100" cy="40" r="13.5"/>
+<path d="M100 29V40L108 45 M100 28V31 M112 40H109 M100 52V49 M88 40H91"/>
+<path d="M70 29L78 20H122L130 29 M82 20L88 12H112L118 20 M91 12L100 3L109 12 M100 3V0"/>
+<path d="M67 63L59 69V78 M133 63L141 69V78"/>
+</g></svg>
