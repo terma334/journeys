@@ -29,9 +29,9 @@ const reiseJahre = [
         reisen: [
             { name: "Türkei", link: "https://terma334.github.io/old/2024Turkei/index.html" },
             { name: "Holland", link: "https://terma334.github.io/old/2024Holland/index.html" },
-            { name: "Hamburg", link: "https://terma334.github.io/old/2023Hamburg/index.html" },
-            { name: "Azoren", link: "https://terma334.github.io/old/2022Azoren/index.html" },
-            { name: "Belgien", link: "https://terma334.github.io/old/2021Belgien/index.html" },
+            { name: "Hamburg", link: "https://terma334.github.io/old2/2023Hamburg/index.html" },
+            { name: "Azoren", link: "https://terma334.github.io/2022Azoren/index.html" },
+            { name: "Belgien", link: "https://terma334.github.io/old2/2021Belgien/index.html" },
         ]
     },
 ];
