@@ -1,0 +1,265 @@
+{
+  "einstellungen": {
+    "basisPfad": "https://terma334.github.io/journeys/"
+  },
+  "navigation": {
+    "gruppen": [
+      {
+        "jahr": "2026",
+        "reisen": ["island", "grossbritannien", "sri-lanka"]
+      },
+      {
+        "jahr": "2025",
+        "reisen": ["london", "teneriffa", "finstermuehle"]
+      },
+      {
+        "jahr": "2024-2021",
+        "reisen": ["tuerkei", "holland", "hamburg", "azoren", "belgien"]
+      }
+    ]
+  },
+  "reisen": [
+    {
+      "id": "island",
+      "name": "Island",
+      "jahr": "2026",
+      "beschreibung": "Roadtrip mit Kerstin",
+      "link": "https://terma334.github.io/2026Island/index.html",
+      "bild": "https://terma334.github.io/2026Island/pictures/Tag6/2.jpg",
+      "laender": ["is"],
+      "navigationsName": "Island",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/is.png",
+        "stempelText": "Ísland",
+        "stempelTyp": "island",
+        "symbol": "❄",
+        "symbolFarbe": "#000000",
+        "winkel": "-3deg",
+        "stempelOben": "18px",
+        "stempelLinks": "20px",
+        "passOben": "20px",
+        "passRechts": "225px"
+      }
+    },
+    {
+      "id": "grossbritannien",
+      "name": "Northumbria & Edinburgh",
+      "jahr": "2026",
+      "beschreibung": "Military Tattoo",
+      "link": "https://terma334.github.io/2026GB/index.html",
+      "bild": "https://terma334.github.io/2026GB/pictures/Tag2/b/9.jpg",
+      "laender": ["gb"],
+      "navigationsName": "Großbritannien",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/gb.png",
+        "stempelText": "UNITED KINGDOM",
+        "stempelTyp": "uk",
+        "symbol": "♛",
+        "symbolFarbe": "#000000",
+        "winkel": "2deg",
+        "stempelOben": "10px",
+        "stempelRechts": "10px",
+        "passOben": "15px",
+        "passRechts": "35px"
+      }
+    },
+    {
+      "id": "sri-lanka",
+      "name": "Sri Lanka",
+      "jahr": "2026",
+      "beschreibung": "WeRoad 360°",
+      "link": "https://terma334.github.io/2026SriLanka/index.html",
+      "bild": "https://terma334.github.io/2026SriLanka/pictures/Tag3/a/6.jpg",
+      "laender": ["lk"],
+      "navigationsName": "Sri Lanka",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/lk.png",
+        "stempelText": "ශ්‍රී ලංකා",
+        "stempelTyp": "sri-lanka",
+        "symbol": "🐘",
+        "symbolFarbe": "#000000",
+        "winkel": "-2deg",
+        "stempelOben": "8px",
+        "stempelLinks": "5px",
+        "passOben": "25px",
+        "passRechts": "155px"
+      }
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "jahr": "2025",
+      "beschreibung": "Citytrip",
+      "link": "https://terma334.github.io/2025London/index.html",
+      "bild": "https://terma334.github.io/2025London/pictures/Tag2/8.jpg",
+      "laender": ["gb"],
+      "navigationsName": "London",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/gb.png",
+        "stempelText": "LONDON",
+        "stempelTyp": "london",
+        "symbolBild": "startseite/stempel/london-stempel.svg",
+        "symbolFarbe": "rgba(155,55,55,0.85)",
+        "winkel": "-2deg",
+        "stempelOben": "8px",
+        "stempelLinks": "5px",
+        "passOben": "25px",
+        "passRechts": "155px"
+      }
+    },
+    {
+      "id": "teneriffa",
+      "name": "Teneriffa",
+      "jahr": "2025",
+      "beschreibung": "",
+      "link": "https://terma334.github.io/2025Teneriffa/index.html",
+      "bild": "https://terma334.github.io/2025Teneriffa/pictures/Tag4/2.jpg",
+      "laender": ["es"],
+      "navigationsName": "Teneriffa",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/es.png",
+        "stempelText": "TENERIFE",
+        "stempelTyp": "teneriffa",
+        "symbolBild": "startseite/stempel/teneriffa-stempel.svg",
+        "symbolFarbe": "rgba(0,0,0,1)",
+        "winkel": "-10deg",
+        "stempelOben": "8px",
+        "stempelLinks": "200px",
+        "passOben": "25px",
+        "passRechts": "20px"
+      }
+    },
+    {
+      "id": "finstermuehle",
+      "name": "Finstermühle",
+      "jahr": "2025",
+      "beschreibung": "Family",
+      "link": "https://terma334.github.io/2025Finstermuhle/index.html",
+      "bild": "https://terma334.github.io/2025Finstermuhle/pictures/Tag2/6.jpg",
+      "laender": ["de"],
+      "navigationsName": "Finstermühle",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/de.png",
+        "stempelText": "Finster mühle",
+        "stempelTyp": "finstermühle",
+        "symbolBild": "startseite/stempel/finstermuhle-stempel.svg",
+        "symbolFarbe": "rgba(0,0,0,1)",
+        "winkel": "-2deg",
+        "stempelOben": "8px",
+        "stempelLinks": "5px",
+        "passOben": "8px",
+        "passRechts": "180px"
+      }
+    },
+    {
+      "id": "tuerkei",
+      "name": "Türkei",
+      "jahr": "2024",
+      "beschreibung": "Strandurlaub",
+      "link": "https://terma334.github.io/old/2024Turkei/index.html",
+      "bild": "https://terma334.github.io/old/2024Turkei/pictures/Tag1/1.jpg",
+      "laender": ["tr"],
+      "navigationsName": "Türkei",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/tr.png",
+        "stempelText": "Türkiye",
+        "stempelTyp": "türkei",
+        "symbolBild": "startseite/stempel/turkei-stempel.svg",
+        "symbolFarbe": "rgba(0,0,0,1)",
+        "winkel": "-4deg",
+        "stempelOben": "8px",
+        "stempelLinks": "5px",
+        "passOben": "25px",
+        "passRechts": "155px"
+      }
+    },
+    {
+      "id": "holland",
+      "name": "Holland",
+      "jahr": "2024",
+      "beschreibung": "Amsterdam & Texel",
+      "link": "https://terma334.github.io/old/2024Holland/index.html",
+      "bild": "https://terma334.github.io/old/2024Holland/pictures/Tag2/6.jpg",
+      "laender": ["nl"],
+      "navigationsName": "Holland",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/nl.png",
+        "stempelText": "NEDERLAND",
+        "stempelTyp": "holland",
+        "symbolBild": "startseite/stempel/holland-stempel.svg",
+        "symbolFarbe": "rgba(0,0,255,0.85)",
+        "winkel": "-2deg",
+        "stempelOben": "8px",
+        "stempelRechts": "10px",
+        "passOben": "15px",
+        "passRechts": "45px"
+      }
+    },
+    {
+      "id": "hamburg",
+      "name": "Hamburg",
+      "jahr": "2023",
+      "beschreibung": "König der Löwen",
+      "link": "https://terma334.github.io/old2/2023Hamburg/index.html",
+      "bild": "https://terma334.github.io/old2/2023Hamburg/pictures/Tag1/10.jpg",
+      "laender": ["de"],
+      "navigationsName": "Hamburg",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/de.png",
+        "stempelText": "HH",
+        "stempelTyp": "hamburg",
+        "symbolBild": "startseite/stempel/hamburg-stempel.svg",
+        "symbolFarbe": "rgba(0,0,0,1)",
+        "winkel": "2deg",
+        "stempelOben": "5px",
+        "stempelRechts": "10px",
+        "passOben": "15px",
+        "passRechts": "30px"
+      }
+    },
+    {
+      "id": "azoren",
+      "name": "Azoren",
+      "jahr": "2022",
+      "beschreibung": "Inselhopping",
+      "link": "https://terma334.github.io/2022Azoren/index.html",
+      "bild": "https://terma334.github.io/2022Azoren/pictures/Tag2/6.jpg",
+      "laender": ["pt"],
+      "navigationsName": "Azoren",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/pt.png",
+        "stempelText": "Açores",
+        "stempelTyp": "azoren",
+        "symbolBild": "startseite/stempel/azoren-stempel.svg",
+        "symbolFarbe": "rgba(0,0,128,1)",
+        "winkel": "10deg",
+        "stempelOben": "8px",
+        "stempelRechts": "5px",
+        "passOben": "20px",
+        "passRechts": "45px"
+      }
+    },
+    {
+      "id": "belgien",
+      "name": "Belgien",
+      "jahr": "2021",
+      "beschreibung": "Waterloo",
+      "link": "https://terma334.github.io/old2/2021Belgien/index.html",
+      "bild": "https://terma334.github.io/old2/2021Belgien/pictures/Tag2/10.jpg",
+      "laender": ["be"],
+      "navigationsName": "Belgien",
+      "postkarte": {
+        "flagge": "https://flagcdn.com/w160/be.png",
+        "stempelText": "BELGIQUE",
+        "stempelTyp": "belgien",
+        "symbolBild": "startseite/stempel/belgien-stempel.svg",
+        "symbolFarbe": "rgba(0,0,0,1)",
+        "winkel": "-2deg",
+        "stempelOben": "8px",
+        "stempelLinks": "5px",
+        "passOben": "25px",
+        "passRechts": "175px"
+      }
+    }
+  ]
+}
