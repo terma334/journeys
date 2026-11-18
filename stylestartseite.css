@@ -10,8 +10,8 @@
     height: 80px;
     padding: 7px;
     box-sizing: border-box;
-    background: #f5ead0;
-    border: 2px dashed #a18a65;
+    background: rgba(245,234,208,1);
+    border: 2px dashed rgba(161,138,101,1);
     box-shadow: 2px 3px 7px rgba(0,0,0,0.35);
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
 .marken-inhalt {
     width: 100%;
     height: 100%;
-    border: 1px solid #b5a17e;
+    border: 1px solid rgba(181,161,126,1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@
     font-size: 9px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #514431;
+    color: rgba(81,68,49,1);
     text-align: center;
 }
 
@@ -52,7 +52,7 @@
     right: 5px;
     top: 3px;
     font-size: 2px;
-    color: #8c6840;
+    color: rgba(140,104,64,1);
 }
 
 
@@ -155,17 +155,26 @@
     filter: contrast(1.3);
 }
 
-/* SVG-Symbole */
+
 
 .pass-symbol-bild {
     position: relative;
     z-index: 1;
 
-    filter:
-        grayscale(1)
-        contrast(1.35)
-        opacity(0.9);
+    display: inline-block;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    opacity: 0.9;
 }
+
 
 /* Jahreszahl */
 
@@ -214,7 +223,7 @@
     max-width: 1800px;
     min-height: 100vh;
 
-    background-color: #e7dcc5;
+    background-color: rgba(231,220,197,1);
     background-image:
         radial-gradient(
             ellipse at 15% 15%,
@@ -269,7 +278,7 @@
 }
 
 .titel-inhalt h1 {
-    color: white;
+    color: rgba(255,255,255,1);
     font-family: Georgia, serif;
     font-size: clamp(42px, 6vw, 76px);
     font-style: italic;
@@ -278,7 +287,7 @@
 }
 
 .titel-inhalt p {
-    color: white;
+    color: rgba(255,255,255,1);
     font-family: Georgia, serif;
     font-size: clamp(17px, 2vw, 25px);
     font-style: italic;
@@ -290,7 +299,7 @@
     position: absolute;
     left: 35px;
     top: 25px;
-    color: white;
+    color: rgba(255,255,255,1);
     font-size: 65px;
     opacity: 0.8;
 }
@@ -299,7 +308,7 @@
     position: absolute;
     right: 45px;
     top: 30px;
-    color: white;
+    color: rgba(255,255,255,1);
     font-size: 45px;
     transform: rotate(-15deg);
     opacity: 0.85;
@@ -315,7 +324,7 @@
     align-items: center;
     gap: 15px;
     margin: 15px 5px 22px;
-    color: #24415d;
+    color: rgba(36,65,93,1);
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -324,7 +333,7 @@
 .karten-ueberschrift div {
     flex: 1;
     height: 1px;
-    background: #c5b99f;
+    background: rgba(197,185,159,1);
 }
 
 
@@ -351,10 +360,10 @@
     padding: 12px 12px 18px;
     box-sizing: border-box;
 
-    color: #333;
+    color: rgba(51,51,51,1);
     text-decoration: none;
 
-    background-color: #f0e5cf;
+    background-color: rgba(240,229,207,1);
     background-image:
         radial-gradient(
             ellipse at 20% 20%,
@@ -373,7 +382,7 @@
             transparent 5px
         );
 
-    border: 1px solid #c9b99d;
+    border: 1px solid rgba(201,185,157,1);
     outline: 1px solid rgba(145,112,69,0.25);
     outline-offset: -5px;
 
@@ -404,8 +413,8 @@
     position: relative;
     overflow: hidden;
     height: 210px;
-    background: #ddd;
-    border: 1px solid #c5b394;
+    background: rgba(221,221,221,1);
+    border: 1px solid rgba(197,179,148,1);
     box-shadow: 0 1px 3px rgba(80,60,30,0.15);
 }
 
@@ -439,14 +448,14 @@
     font-style: italic;
     font-size: 21px;
     font-weight: normal;
-    color: #51412d;
+    color: rgba(81,65,45,1);
     margin: 0 0 7px;
 }
 
 .startseiten-karte .karten-information p {
     font-family: Georgia, serif;
     font-style: italic;
-    color: #77664d;
+    color: rgba(119,102,77,1);
     font-size: 13px;
     margin: 0 0 12px;
 }
@@ -458,7 +467,7 @@
 
 .startseiten-karte .reise-ansehen {
     display: inline-block;
-    color: #93613b;
+    color: rgba(147,97,59,1);
     font-family: Georgia, serif;
     font-size: 14px;
 }
@@ -504,7 +513,7 @@
     justify-content: center;
     gap: 25px;
     margin: 40px 0 15px;
-    color: #24415d;
+    color: rgba(36,65,93,1);
 }
 
 .startseiten-footer p {
@@ -518,7 +527,7 @@
 .startseiten-footer > span:last-child {
     height: 1px;
     flex: 1;
-    background: #b8a98e;
+    background: rgba(184,169,142,1);
 }
 
 
@@ -638,14 +647,14 @@
 
 /* Island */
 .briefmarke-island {
-    background: #dce5e9;
-    border-color: #345b70;
-    outline: 1px solid #345b70;
+    background: rgba(220,229,233,1);
+    border-color: rgba(52,91,112,1);
+    outline: 1px solid rgba(52,91,112,1);
     outline-offset: -5px;
     transform: rotate(-7deg);
 }
 .briefmarke-island .marken-inhalt {
-    border-color: #67899a;
+    border-color: rgba(103,137,154,1);
 }
 .pass-island {
     color: rgba(35,75,105,0.85);
@@ -658,14 +667,14 @@
 
 /* UK */
 .briefmarke-uk {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgba(242,227,213,1);
+    border-color: rgba(155,66,66,1);
+    outline: 1px solid rgba(155,66,66,1);
     outline-offset: -5px;
     transform: rotate(5deg);
 }
 .briefmarke-uk .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-uk {
     color: rgba(155,55,55,0.85);
@@ -679,14 +688,14 @@
 
 /* Sri Lanka */
 .briefmarke-sri-lanka {
-    background: #f5dfac;
-    border-color: #9b6a22;
-    outline: 1px solid #9b6a22;
+    background: rgba(245,223,172,1);
+    border-color: rgba(155,106,34,1);
+    outline: 1px solid rgba(155,106,34,1);
     outline-offset: -5px;
     transform: rotate(-2deg);
 }
 .briefmarke-sri-lanka .marken-inhalt {
-    border-color: #b18a45;
+    border-color: rgba(177,138,69,1);
 }
 .pass-sri-lanka {
     color: rgba(135,85,25,0.9);
@@ -703,18 +712,18 @@
 
 /* London */
 .briefmarke-london {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgba(242,227,213,1);
+    border-color: rgba(155,66,66,1);
+    outline: 1px solid rgba(155,66,66,1);
     outline-offset: -5px;
     transform: rotate(5deg);
 }
 .briefmarke-london .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-london {
-    color: rgba(155,55,55,0.85);
-    border-color: rgba(155,55,55,0.85);
+    color: rgba(155,55,55,0.99);
+    border-color: rgba(155,55,55,0.99);
     transform: rotate(12deg);
 }
 .startseiten-karte.london::before {
@@ -727,17 +736,17 @@
 
 /* Teneriffa */
 .briefmarke-teneriffa {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgba(242,227,213,1);
+    border-color: rgba(155,66,66,1);
+    outline: 1px solid rgba(155,66,66,1);
     outline-offset: -5px;
     transform: rotate(-10deg);
 }
 .briefmarke-teneriffa .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-teneriffa {
-    color: rgba(0,0,0,0.85);
+    color:rgba(0,0,0,1);
     border-color: rgba(0,0,0,0.85);
     transform: rotate(35deg);
 }
@@ -751,13 +760,13 @@
 
 /* Finstermühle */
 .briefmarke-finstermühle {
-    background: #f2e3d5;
-    border-color: #FFFFFF;
-    outline: 1px solid #FFFFFF;
+    background: rgba(242,227,213,1);
+    border-color: rgba(255,255,255,1);
+    outline: 1px solid rgba(255,255,255,1);
     outline-offset: -5px;
 }
 .briefmarke-finstermühle .marken-inhalt {
-    border-color: #FFFFFF;
+    border-color: rgba(255,255,255,1);
 }
 .pass-finstermühle {
     color: rgba(0,0,0,0.85);
@@ -770,18 +779,18 @@
 
 /* Türkei */
 .briefmarke-türkei {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgba(57, 199, 115, 0.644);
+    border-color: rgba(140, 221, 169, 0.644);
+    outline: 1px solid rgba(155,66,66,1);
     outline-offset: -5px;
-    transform: rotate(5deg);
+    transform: rotate(-2deg);
 }
 .briefmarke-türkei .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-türkei {
-    color: rgba(155,55,55,0.85);
-    border-color: rgba(155,55,55,0.85);
+    color: rgba(0,0,0,0.35);
+    border-color: rgba(0,0,0,0.35);
     transform: rotate(12deg);
 }
 .startseiten-karte.türkei::before {
@@ -790,19 +799,19 @@
 
 /* Holland */
 .briefmarke-holland {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgba(242,227,213,1);
+    border-color: rgba(0,0,0,1);
+    outline: 1px solid rgba(0,0,0,1);
     outline-offset: -5px;
     transform: rotate(5deg);
 }
 .briefmarke-holland .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-holland {
-    color: rgba(155,55,55,0.85);
-    border-color: rgba(155,55,55,0.85);
-    transform: rotate(12deg);
+    color: rgba(0,0,255,0.55);
+    border-color: rgba(0,0,255,0.55);
+    transform: rotate(25deg);
 }
 .startseiten-karte.holland::before {
     background-image: url("startseite/holland-umriss.svg");
@@ -810,19 +819,17 @@
 
 /* Hamburg */
 .briefmarke-hamburg {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgba(255,255,255,1);
+    border-color: rgba(0,0,0,1);
+    outline: 1px solid rgba(0,0,0,1);
     outline-offset: -5px;
-    transform: rotate(5deg);
 }
 .briefmarke-hamburg .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-hamburg {
-    color: rgba(155,55,55,0.85);
-    border-color: rgba(155,55,55,0.85);
-    transform: rotate(12deg);
+    color: rgba(0,0,0,0.35);
+    border-color: rgba(0,0,0,0.35);
 }
 .startseiten-karte.hamburg::before {
     background-image: url("startseite/deutschland-umriss.svg");
@@ -830,18 +837,18 @@
 
 /* Azoren */
 .briefmarke-azoren {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgb(249, 143, 143);
+    border-color: rgba(155,66,66,1);
+    outline: 1px solid rgba(155,66,66,1);
     outline-offset: -5px;
-    transform: rotate(5deg);
+    transform: rotate(1deg);
 }
 .briefmarke-azoren .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-azoren {
-    color: rgba(155,55,55,0.85);
-    border-color: rgba(155,55,55,0.85);
+    color: rgba(0,0,128,0.85);
+    border-color: rgba(0,0,128,0.85);
     transform: rotate(12deg);
 }
 .startseiten-karte.azoren::before {
@@ -850,14 +857,14 @@
 
 /* Belgien */
 .briefmarke-belgien {
-    background: #f2e3d5;
-    border-color: #9b4242;
-    outline: 1px solid #9b4242;
+    background: rgba(242,227,213,1);
+    border-color: rgba(155,66,66,1);
+    outline: 1px solid rgba(155,66,66,1);
     outline-offset: -5px;
     transform: rotate(5deg);
 }
 .briefmarke-belgien .marken-inhalt {
-    border-color: #a85b55;
+    border-color: rgba(168,91,85,1);
 }
 .pass-belgien {
     color: rgba(155,55,55,0.85);

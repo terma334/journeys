@@ -17,6 +17,7 @@
             stempelText: "Ísland",
             stempelTyp: "island",
             symbol: "❄",
+            symbolFarbe: "#000000",
             winkel: "-3deg",
             stempelOben: "18px",
             stempelLinks: "20px",
@@ -35,6 +36,7 @@
             stempelText: "UNITED KINGDOM",
             stempelTyp: "uk",
             symbol: "♛",
+            symbolFarbe: "#000000",
             winkel: "2deg",
             stempelOben: "10px",
             stempelLinks: "",
@@ -53,6 +55,7 @@
             stempelText: "ශ්‍රී ලංකා",
             stempelTyp: "sri-lanka",
             symbol: "🐘",
+            symbolFarbe: "#000000",
             winkel: "-2deg",
             stempelOben: "8px",
             stempelLinks: "5px",
@@ -71,6 +74,7 @@
             stempelText: "LONDON",
             stempelTyp: "london",
             symbolBild: "startseite/stempel/london-stempel.svg",
+            symbolFarbe:  "rgba(155,55,55,0.85)",
             winkel: "-2deg",
             stempelOben: "8px",
             stempelLinks: "5px",
@@ -89,6 +93,7 @@
             stempelText: "TENERIFE",
             stempelTyp: "teneriffa",
             symbolBild: "startseite/stempel/teneriffa-stempel.svg",
+            symbolFarbe:  "rgba(0,0,0,1)",
             winkel: "-10deg",
             stempelOben: "8px",
             stempelLinks: "200px",
@@ -107,6 +112,7 @@
             stempelText: "Finster mühle",
             stempelTyp: "finstermühle",
             symbolBild: "startseite/stempel/finstermuhle-stempel.svg",
+            symbolFarbe:  "rgba(0,0,0,1)",
             winkel: "-2deg",
             stempelOben: "8px",
             stempelLinks: "5px",
@@ -125,6 +131,7 @@
             stempelText: "Türkiye",
             stempelTyp: "türkei",
             symbolBild: "startseite/stempel/turkei-stempel.svg",
+            symbolFarbe:  "rgba(0,0,0,1)",
             winkel: "-4deg",
             stempelOben: "8px",
             stempelLinks: "5px",
@@ -142,12 +149,13 @@
             stempelText: "NEDERLAND",
             stempelTyp: "holland",
             symbolBild: "startseite/stempel/holland-stempel.svg",
+            symbolFarbe:  "rgba(0,0,255,0.85)",
             winkel: "-2deg",
             stempelOben: "8px",
-            stempelLinks: "5px",
-            stempelRechts: "",
-            passOben: "25px",
-            passRechts: "155px"
+            stempelLinks: "",
+            stempelRechts: "10px",
+            passOben: "15px",
+            passRechts: "45px"
         },
 
         {
@@ -155,17 +163,18 @@
             jahr: "2023",
             beschreibung: "König der Löwen",
             link: "https://terma334.github.io/old2/2023Hamburg/index.html",
-            bild: "https://terma334.github.io/old2/2023Hamburg/pictures/Tag2/6.jpg",
+            bild: "https://terma334.github.io/old2/2023Hamburg/pictures/Tag1/10.jpg",
             flagge: "https://flagcdn.com/w160/de.png",
             stempelText: "HH",
             stempelTyp: "hamburg",
             symbolBild: "startseite/stempel/hamburg-stempel.svg",
-            winkel: "-2deg",
-            stempelOben: "8px",
-            stempelLinks: "5px",
-            stempelRechts: "",
-            passOben: "25px",
-            passRechts: "155px"
+            symbolFarbe:  "rgba(0,0,0,1)",
+            winkel: "2deg",
+            stempelOben: "5px",
+            stempelLinks: "",
+            stempelRechts: "10px",
+            passOben: "15px",
+            passRechts: "30px"
         },
 
         {
@@ -178,12 +187,13 @@
             stempelText: "Açores",
             stempelTyp: "azoren",
             symbolBild: "startseite/stempel/azoren-stempel.svg",
-            winkel: "-2deg",
+            symbolFarbe:  "rgba(0,0,128,1)",
+            winkel: "10deg",
             stempelOben: "8px",
-            stempelLinks: "5px",
-            stempelRechts: "",
-            passOben: "25px",
-            passRechts: "155px"
+            stempelLinks: "",
+            stempelRechts: "5px",
+            passOben: "20px",
+            passRechts: "45px"
         },
 
         {
@@ -196,6 +206,7 @@
             stempelText: "BELGIQUE",
             stempelTyp: "belgien",
             symbolBild: "startseite/stempel/belgien-stempel.svg",
+            symbolFarbe:  "rgba(0,0,0,1)",
             winkel: "-2deg",
             stempelOben: "8px",
             stempelLinks: "5px",
@@ -242,24 +253,30 @@
                 );
 
 
-                // =================================
-                // STEMPELSYMBOL ERZEUGEN
-                // =================================
+                
 
-                const symbolHtml = reise.symbolBild
+// =================================
+// STEMPELSYMBOL ERZEUGEN
+// =================================
 
-                    ? `
-                        <img
-                            class="pass-symbol pass-symbol-bild"
-                            src="${reise.symbolBild}"
-                            alt=""
-                            style="width:52px;height:52px;object-fit:contain;"
-                        >
-                    `
+const symbolHtml = reise.symbolBild
+    ? `
+        <span
+            class="pass-symbol pass-symbol-bild"
+            style="
+                width:52px;
+                height:52px;
+                -webkit-mask-image:url('${reise.symbolBild}');
+                mask-image:url('${reise.symbolBild}');
+                background-color:${reise.symbolFarbe || '#77736b'};
+            "
+            aria-hidden="true"
+        ></span>
+    `
+    : `
+        <span class="pass-symbol">${reise.symbol || ""}</span>
+    `;
 
-                    : `
-                        <span class="pass-symbol">${reise.symbol || ""}</span>
-                    `;
 
 
                 // =================================

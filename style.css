@@ -1,4 +1,3 @@
-
 /* =========================================================
    REISETAGEBUCH – BEREINIGTES STYLESHEET
    =========================================================
@@ -33,7 +32,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #e7dcc5;
+    background-color: rgba(231, 220, 197, 1);
 }
 
 
@@ -44,7 +43,7 @@ body {
 main:not(.startseite) {
     position: relative;
     isolation: isolate;
-    background-color: #e7dcc5;
+    background-color: rgba(231, 220, 197, 1);
 }
 
 main:not(.startseite)::before {
@@ -84,7 +83,7 @@ nav {
     top: 0;
     width: 220px;
     height: 100%;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 1);
     padding-top: 20px;
 }
 
@@ -130,7 +129,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: rgba(85, 85, 85, 1);
 }
 
 /* Inhalt rechts neben der Navigation */
@@ -157,7 +156,7 @@ section {
     font-weight: bold;
     list-style: none;
     position: relative;
-    color: #d4a017;
+    color: rgba(212, 160, 23, 1);
 }
 
 .reisen-dropdown summary::-webkit-details-marker {
@@ -192,7 +191,7 @@ section {
     cursor: pointer;
     padding: 8px 10px;
     font-weight: bold;
-    color: #d4a017;
+    color: rgba(212, 160, 23, 1);
     list-style: none;
 }
 
@@ -218,7 +217,7 @@ section {
     margin: 8px 0 8px 10px;
     padding: 8px 10px;
     font-weight: bold;
-    color: #d4a017;
+    color: rgba(212, 160, 23, 1);
     text-decoration: none;
     border: 1px solid rgba(212, 160, 23, 0.35);
     border-radius: 5px;
@@ -246,7 +245,7 @@ section {
 .reisen-jahr {
     font-size: 0.85em;
     font-weight: bold;
-    color: #d4a017;
+    color: rgba(212, 160, 23, 1);
     padding: 8px 10px 4px 10px;
     margin-left: 10px;
 }
@@ -312,7 +311,7 @@ section {
     text-align: center;
     margin-top: 8px;
     font-size: 14px;
-    color: #333;
+    color: rgba(51, 51, 51, 1);
 }
 
 /* Zusätzliche Bildregeln */
@@ -445,7 +444,7 @@ figcaption {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: #000;
+    background: rgba(0, 0, 0, 1);
     z-index: 10000;
     overflow: hidden;
     justify-content: center;
@@ -535,7 +534,7 @@ figcaption {
 
         font-size: 28px;
 
-        background: #333;
+        background: rgba(51, 51, 51, 1);
         color: white;
 
         border-radius: 10px;
@@ -571,7 +570,7 @@ figcaption {
    ========================================================= */
 
 .sterne {
-    color: #a47c36;
+    color: rgba(164, 124, 54, 1);
     font-size: 42px;
     letter-spacing: 5px;
 }
@@ -581,7 +580,7 @@ figcaption {
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: rgba(44, 62, 80, 1);
 }
 
 .stop {
@@ -595,7 +594,7 @@ figcaption {
     margin-top: 35px;
     margin-bottom: 15px;
 
-    color: #2c3e50;
+    color: rgba(44, 62, 80, 1);
 }
 
 
@@ -649,7 +648,7 @@ figcaption {
     width: auto;
     height: auto;
     border-radius: 0;
-    background: #000;
+    background: rgba(0, 0, 0, 1);
 }
 
 /* Bildbeschreibung als dezente Einblendung */
@@ -666,7 +665,7 @@ figcaption {
     font-size: clamp(14px, 1.5vw, 22px);
     text-align: center;
     line-height: 1.4;
-    text-shadow: 0 2px 5px #000;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
     pointer-events: none;
 }
 
@@ -726,7 +725,7 @@ figcaption {
    ========================================================= */
 
 #nav {
-    background-color: #493A2D;
+    background-color: rgba(73, 58, 45, 1);
     background-image:
         radial-gradient(
             ellipse at 20% 15%,
@@ -742,13 +741,13 @@ figcaption {
         ),
         linear-gradient(
             160deg,
-            #514131,
-            #392D23
+            rgba(81, 65, 49, 1),
+            rgba(57, 45, 35, 1)
         );
 
-    border-right: 2px solid #806747;
+    border-right: 2px solid rgba(128, 103, 71, 1);
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.18);
-    color: #E9D9BB;
+    color: rgba(233, 217, 187, 1);
     font-size: 12px;
 }
 
@@ -761,12 +760,12 @@ figcaption {
 /* Überschrift Alle Reisen */
 
 #nav .reisen-dropdown summary {
-    color: #E3C99D;
+    color: rgba(227, 201, 157, 1);
     font-weight: bold;
     padding: 8px;
     cursor: pointer;
     list-style: none;
-    border: 1px solid #806747;
+    border: 1px solid rgba(128, 103, 71, 1);
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.045);
     transition: background 0.2s, color 0.2s;
@@ -779,7 +778,7 @@ figcaption {
 #nav .reisen-dropdown summary::after {
     content: "⌄";
     float: right;
-    color: #C5A878;
+    color: rgba(197, 168, 120, 1);
     font-size: 18px;
 }
 
@@ -789,14 +788,14 @@ figcaption {
 
 #nav .reisen-dropdown summary:hover {
     background: rgba(210, 180, 130, 0.16);
-    color: #FFF0D0;
+    color: rgba(255, 240, 208, 1);
 }
 
 /* Reiseeinträge und Tageslinks */
 
 #nav a {
     display: block;
-    color: #E2D2B5;
+    color: rgba(226, 210, 181, 1);
     text-decoration: none;
     padding: 9px 12px;
     border-radius: 4px;
@@ -807,14 +806,14 @@ figcaption {
 
 #nav a:hover {
     background: rgba(210, 180, 130, 0.18);
-    color: #FFF0D0;
+    color: rgba(255, 240, 208, 1);
 }
 
 /* Trennlinien */
 
 #nav hr {
     border: none;
-    border-top: 1px solid #806747;
+    border-top: 1px solid rgba(128, 103, 71, 1);
     margin: 12px 0;
     opacity: 0.8;
 }
@@ -828,13 +827,13 @@ figcaption {
 /* Mobiler Menüknopf */
 
 #menuButton {
-    background: #493A2D;
-    color: #E3C99D;
-    border: 1px solid #806747;
+    background: rgba(73, 58, 45, 1);
+    color: rgba(227, 201, 157, 1);
+    border: 1px solid rgba(128, 103, 71, 1);
 }
 
 #menuButton:hover {
-    background: #66523D;
+    background: rgba(102, 82, 61, 1);
 }
 
 
@@ -873,9 +872,9 @@ figcaption {
     background:
         radial-gradient(
             ellipse at center,
-            #8b7654 0%,
-            #594832 65%,
-            #30271c 100%
+            rgba(139, 118, 84, 1) 0%,
+            rgba(89, 72, 50, 1) 65%,
+            rgba(48, 39, 28, 1) 100%
         );
 }
 
@@ -932,7 +931,7 @@ figcaption {
             rgba(239, 226, 194, 0.97)
         );
 
-    border: 3px double #9b7947;
+    border: 3px double rgba(155, 121, 71, 1);
 
     box-shadow:
         0 5px 18px rgba(0, 0, 0, 0.25),
@@ -989,7 +988,7 @@ figcaption {
 
     line-height: 1.2;
 
-    color: #49351f;
+    color: rgba(73, 53, 31, 1);
 
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
 }
@@ -1006,7 +1005,7 @@ figcaption {
     font-size: clamp(15px, 1.7vw, 19px);
     line-height: 1.5;
 
-    color: #59452c;
+    color: rgba(89, 69, 44, 1);
 
     max-width: 850px;
 
@@ -1026,7 +1025,7 @@ figcaption {
 
     letter-spacing: 5px;
 
-    color: #a47c36;
+    color: rgba(164, 124, 54, 1);
 }
 
 
@@ -1072,7 +1071,7 @@ figcaption {
 
     margin: 0 auto;
 
-    border: 4px solid #e3d2ad;
+    border: 4px solid rgba(227, 210, 173, 1);
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 
