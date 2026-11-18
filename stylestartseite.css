@@ -604,27 +604,31 @@
 }
 
 
+
 /* =========================================
-   INDIVIDUELLE LÄNDER-WASSERZEICHEN
-   AUF DEN POSTKARTEN
+   INDIVIDUELLE POSTKARTEN-GESTALTUNG
+   Werte kommen aus reisedaten.json
    ========================================= */
 
-/* Gemeinsame Gestaltung */
+/* Gemeinsame Gestaltung der Wasserzeichen */
 
 .startseiten-karte::before {
     content: "";
     position: absolute;
     z-index: 0;
-    right: 15px;
-    bottom: 15px;
-    width: 100px;
-    height: 100px;
 
+    right: var(--wasserzeichen-rechts, 15px);
+    bottom: var(--wasserzeichen-unten, 15px);
+
+    width: var(--wasserzeichen-breite, 100px);
+    height: var(--wasserzeichen-hoehe, 100px);
+
+    background-image: var(--wasserzeichen-bild, none);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-    opacity: 0.50;
+    opacity: var(--wasserzeichen-transparenz, 0.50);
     pointer-events: none;
 }
 
@@ -637,240 +641,22 @@
 }
 
 /* SVG-Stempelmotive: Text etwas höher setzen */
+
 .pass-symbol-bild + .pass-text {
     margin-top: -8px;
 }
 
 /* =========================================
-   ZU BEARBEITEN EINZELNE LÄNDER
+   SMARTPHONE-ANPASSUNG WASSERZEICHEN
    ========================================= */
 
-/* Island */
-.briefmarke-island {
-    background: rgba(220,229,233,1);
-    border-color: rgba(52,91,112,1);
-    outline: 1px solid rgba(52,91,112,1);
-    outline-offset: -5px;
-    transform: rotate(-7deg);
-}
-.briefmarke-island .marken-inhalt {
-    border-color: rgba(103,137,154,1);
-}
-.pass-island {
-    color: rgba(35,75,105,0.85);
-    transform: rotate(-12deg);
-}
-.startseiten-karte.island::before {
-    background-image: url("startseite/island-umriss.svg");
-        opacity: 0.70;
-}
+@media (max-width: 768px) {
 
-/* UK */
-.briefmarke-uk {
-    background: rgba(242,227,213,1);
-    border-color: rgba(155,66,66,1);
-    outline: 1px solid rgba(155,66,66,1);
-    outline-offset: -5px;
-    transform: rotate(5deg);
-}
-.briefmarke-uk .marken-inhalt {
-    border-color: rgba(168,91,85,1);
-}
-.pass-uk {
-    color: rgba(155,55,55,0.85);
-    border-color: rgba(155,55,55,0.85);
-    transform: rotate(12deg);
-}
-.startseiten-karte.uk::before {
-    background-image: url("startseite/grossbritannien-umriss.svg");
-    opacity: 0.30;
-}
+    .startseiten-karte {
+        --wasserzeichen-breite: 115px;
+        --wasserzeichen-hoehe: 90px;
+        --wasserzeichen-rechts: 12px;
+        --wasserzeichen-unten: 12px;
+    }
 
-/* Sri Lanka */
-.briefmarke-sri-lanka {
-    background: rgba(245,223,172,1);
-    border-color: rgba(155,106,34,1);
-    outline: 1px solid rgba(155,106,34,1);
-    outline-offset: -5px;
-    transform: rotate(-2deg);
-}
-.briefmarke-sri-lanka .marken-inhalt {
-    border-color: rgba(177,138,69,1);
-}
-.pass-sri-lanka {
-    color: rgba(135,85,25,0.9);
-    border-color: rgba(135,85,25,0.9);
-    transform: rotate(-9deg);
-}
-.startseiten-karte.sri-lanka::before {
-    background-image: url("startseite/sri-lanka-umriss.svg");
-    right: 200px;
-    bottom: 1px;
-    width: 130px;
-    height: 130px;
-}
-
-/* London */
-.briefmarke-london {
-    background: rgba(242,227,213,1);
-    border-color: rgba(155,66,66,1);
-    outline: 1px solid rgba(155,66,66,1);
-    outline-offset: -5px;
-    transform: rotate(5deg);
-}
-.briefmarke-london .marken-inhalt {
-    border-color: rgba(168,91,85,1);
-}
-.pass-london {
-    color: rgba(155,55,55,0.99);
-    border-color: rgba(155,55,55,0.99);
-    transform: rotate(12deg);
-}
-.startseiten-karte.london::before {
-    background-image: url("startseite/grossbritannien-umriss.svg");
-    right: 200px;
-    bottom: 1px;
-    width: 130px;
-    height: 130px;
-}
-
-/* Teneriffa */
-.briefmarke-teneriffa {
-    background: rgba(242,227,213,1);
-    border-color: rgba(155,66,66,1);
-    outline: 1px solid rgba(155,66,66,1);
-    outline-offset: -5px;
-    transform: rotate(-10deg);
-}
-.briefmarke-teneriffa .marken-inhalt {
-    border-color: rgba(168,91,85,1);
-}
-.pass-teneriffa {
-    color:rgba(0,0,0,1);
-    border-color: rgba(0,0,0,0.85);
-    transform: rotate(35deg);
-}
-.startseiten-karte.teneriffa::before {
-    background-image: url("startseite/teneriffa-umriss.svg");
-    right: 100px;
-    bottom: 1px;
-    width: 130px;
-    height: 130px;
-}
-
-/* Finstermühle */
-.briefmarke-finstermühle {
-    background: rgba(242,227,213,1);
-    border-color: rgba(255,255,255,1);
-    outline: 1px solid rgba(255,255,255,1);
-    outline-offset: -5px;
-}
-.briefmarke-finstermühle .marken-inhalt {
-    border-color: rgba(255,255,255,1);
-}
-.pass-finstermühle {
-    color: rgba(0,0,0,0.85);
-    border-color: rgba(0,0,0,0.85);
-    transform: rotate(0deg);
-}
-.startseiten-karte.finstermühle::before {
-    background-image: url("startseite/deutschland-umriss.svg");
-}
-
-/* Türkei */
-.briefmarke-türkei {
-    background: rgba(57, 199, 115, 0.644);
-    border-color: rgba(140, 221, 169, 0.644);
-    outline: 1px solid rgba(155,66,66,1);
-    outline-offset: -5px;
-    transform: rotate(-2deg);
-}
-.briefmarke-türkei .marken-inhalt {
-    border-color: rgba(168,91,85,1);
-}
-.pass-türkei {
-    color: rgba(0,0,0,0.35);
-    border-color: rgba(0,0,0,0.35);
-    transform: rotate(12deg);
-}
-.startseiten-karte.türkei::before {
-    background-image: url("startseite/turkei-umriss.svg");
-}
-
-/* Holland */
-.briefmarke-holland {
-    background: rgba(242,227,213,1);
-    border-color: rgba(0,0,0,1);
-    outline: 1px solid rgba(0,0,0,1);
-    outline-offset: -5px;
-    transform: rotate(5deg);
-}
-.briefmarke-holland .marken-inhalt {
-    border-color: rgba(168,91,85,1);
-}
-.pass-holland {
-    color: rgba(0,0,255,0.55);
-    border-color: rgba(0,0,255,0.55);
-    transform: rotate(25deg);
-}
-.startseiten-karte.holland::before {
-    background-image: url("startseite/holland-umriss.svg");
-}
-
-/* Hamburg */
-.briefmarke-hamburg {
-    background: rgba(255,255,255,1);
-    border-color: rgba(0,0,0,1);
-    outline: 1px solid rgba(0,0,0,1);
-    outline-offset: -5px;
-}
-.briefmarke-hamburg .marken-inhalt {
-    border-color: rgba(168,91,85,1);
-}
-.pass-hamburg {
-    color: rgba(0,0,0,0.35);
-    border-color: rgba(0,0,0,0.35);
-}
-.startseiten-karte.hamburg::before {
-    background-image: url("startseite/deutschland-umriss.svg");
-}
-
-/* Azoren */
-.briefmarke-azoren {
-    background: rgb(249, 143, 143);
-    border-color: rgba(155,66,66,1);
-    outline: 1px solid rgba(155,66,66,1);
-    outline-offset: -5px;
-    transform: rotate(1deg);
-}
-.briefmarke-azoren .marken-inhalt {
-    border-color: rgba(168,91,85,1);
-}
-.pass-azoren {
-    color: rgba(0,0,128,0.85);
-    border-color: rgba(0,0,128,0.85);
-    transform: rotate(12deg);
-}
-.startseiten-karte.azoren::before {
-    background-image: url("startseite/azoren-umriss.svg");
-}
-
-/* Belgien */
-.briefmarke-belgien {
-    background: rgba(255,255,255,1);
-    border-color: rgba(0,0,0,1);
-    outline: 1px solid rgba(0,0,0,1);
-    outline-offset: -5px;
-    transform: rotate(0deg);
-}
-.briefmarke-belgien .marken-inhalt {
-    border-color: rgba(0,0,0,1);
-}
-.pass-belgien {
-    color: rgba(0,0,0,1);
-    border-color: rgba(0,0,0,1);
-    transform: rotate(-47deg);
-}
-.startseiten-karte.belgien::before {
-    background-image: url("startseite/belgien-umriss.svg");
 }

@@ -1,3 +1,4 @@
+
 {
   "einstellungen": {
     "basisPfad": "https://terma334.github.io/journeys/"
@@ -6,15 +7,29 @@
     "gruppen": [
       {
         "jahr": "2026",
-        "reisen": ["island", "grossbritannien", "sri-lanka"]
+        "reisen": [
+          "island",
+          "grossbritannien",
+          "sri-lanka"
+        ]
       },
       {
         "jahr": "2025",
-        "reisen": ["london", "teneriffa", "finstermuehle"]
+        "reisen": [
+          "london",
+          "teneriffa",
+          "finstermuehle"
+        ]
       },
       {
         "jahr": "2024-2021",
-        "reisen": ["tuerkei", "holland", "hamburg", "azoren", "belgien"]
+        "reisen": [
+          "tuerkei",
+          "holland",
+          "hamburg",
+          "azoren",
+          "belgien"
+        ]
       }
     ]
   },
@@ -38,7 +53,23 @@
         "stempelOben": "18px",
         "stempelLinks": "20px",
         "passOben": "20px",
-        "passRechts": "225px"
+        "passRechts": "225px",
+        "briefmarke": {
+          "hintergrund": "rgba(220,229,233,1)",
+          "rahmen": "rgba(52,91,112,1)",
+          "innenrahmen": "rgba(103,137,154,1)",
+          "winkel": "-7deg",
+          "outline": "1px solid rgba(52,91,112,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(35,75,105,0.85)",
+          "winkel": "-12deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/island-umriss.svg",
+          "transparenz": 0.70
+        }
       }
     },
     {
@@ -60,7 +91,24 @@
         "stempelOben": "10px",
         "stempelRechts": "10px",
         "passOben": "15px",
-        "passRechts": "35px"
+        "passRechts": "35px",
+        "briefmarke": {
+          "hintergrund": "rgba(242,227,213,1)",
+          "rahmen": "rgba(155,66,66,1)",
+          "innenrahmen": "rgba(168,91,85,1)",
+          "winkel": "5deg",
+          "outline": "1px solid rgba(155,66,66,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(155,55,55,0.85)",
+          "rahmen": "rgba(155,55,55,0.85)",
+          "winkel": "12deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/grossbritannien-umriss.svg",
+          "transparenz": 0.30
+        }
       }
     },
     {
@@ -71,7 +119,6 @@
       "link": "https://terma334.github.io/2026SriLanka/index.html",
       "bild": "https://terma334.github.io/2026SriLanka/pictures/Tag3/a/6.jpg",
       "laender": ["lk"],
-      "navigationsName": "Sri Lanka",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/lk.png",
         "stempelText": "ශ්‍රී ලංකා",
@@ -82,7 +129,28 @@
         "stempelOben": "8px",
         "stempelLinks": "5px",
         "passOben": "25px",
-        "passRechts": "155px"
+        "passRechts": "155px",
+        "briefmarke": {
+          "hintergrund": "rgba(245,223,172,1)",
+          "rahmen": "rgba(155,106,34,1)",
+          "innenrahmen": "rgba(177,138,69,1)",
+          "winkel": "-2deg",
+          "outline": "1px solid rgba(155,106,34,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(135,85,25,0.9)",
+          "rahmen": "rgba(135,85,25,0.9)",
+          "winkel": "-9deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/sri-lanka-umriss.svg",
+          "transparenz": 0.50,
+          "rechts": "200px",
+          "unten": "1px",
+          "breite": "130px",
+          "hoehe": "130px"
+        }
       }
     },
     {
@@ -93,7 +161,6 @@
       "link": "https://terma334.github.io/2025London/index.html",
       "bild": "https://terma334.github.io/2025London/pictures/Tag2/8.jpg",
       "laender": ["gb"],
-      "navigationsName": "London",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/gb.png",
         "stempelText": "LONDON",
@@ -104,7 +171,28 @@
         "stempelOben": "8px",
         "stempelLinks": "5px",
         "passOben": "25px",
-        "passRechts": "155px"
+        "passRechts": "155px",
+        "briefmarke": {
+          "hintergrund": "rgba(242,227,213,1)",
+          "rahmen": "rgba(155,66,66,1)",
+          "innenrahmen": "rgba(168,91,85,1)",
+          "winkel": "5deg",
+          "outline": "1px solid rgba(155,66,66,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(155,55,55,0.99)",
+          "rahmen": "rgba(155,55,55,0.99)",
+          "winkel": "12deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/grossbritannien-umriss.svg",
+          "transparenz": 0.50,
+          "rechts": "200px",
+          "unten": "1px",
+          "breite": "130px",
+          "hoehe": "130px"
+        }
       }
     },
     {
@@ -115,7 +203,6 @@
       "link": "https://terma334.github.io/2025Teneriffa/index.html",
       "bild": "https://terma334.github.io/2025Teneriffa/pictures/Tag4/2.jpg",
       "laender": ["es"],
-      "navigationsName": "Teneriffa",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/es.png",
         "stempelText": "TENERIFE",
@@ -126,7 +213,28 @@
         "stempelOben": "8px",
         "stempelLinks": "200px",
         "passOben": "25px",
-        "passRechts": "20px"
+        "passRechts": "20px",
+        "briefmarke": {
+          "hintergrund": "rgba(242,227,213,1)",
+          "rahmen": "rgba(155,66,66,1)",
+          "innenrahmen": "rgba(168,91,85,1)",
+          "winkel": "-10deg",
+          "outline": "1px solid rgba(155,66,66,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(0,0,0,1)",
+          "rahmen": "rgba(0,0,0,0.85)",
+          "winkel": "35deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/teneriffa-umriss.svg",
+          "transparenz": 0.50,
+          "rechts": "100px",
+          "unten": "1px",
+          "breite": "130px",
+          "hoehe": "130px"
+        }
       }
     },
     {
@@ -148,7 +256,23 @@
         "stempelOben": "8px",
         "stempelLinks": "5px",
         "passOben": "8px",
-        "passRechts": "180px"
+        "passRechts": "180px",
+        "briefmarke": {
+          "hintergrund": "rgba(242,227,213,1)",
+          "rahmen": "rgba(255,255,255,1)",
+          "innenrahmen": "rgba(255,255,255,1)",
+          "outline": "1px solid rgba(255,255,255,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(0,0,0,0.85)",
+          "rahmen": "rgba(0,0,0,0.85)",
+          "winkel": "0deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/deutschland-umriss.svg",
+          "transparenz": 0.50
+        }
       }
     },
     {
@@ -159,7 +283,6 @@
       "link": "https://terma334.github.io/old/2024Turkei/index.html",
       "bild": "https://terma334.github.io/old/2024Turkei/pictures/Tag1/1.jpg",
       "laender": ["tr"],
-      "navigationsName": "Türkei",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/tr.png",
         "stempelText": "Türkiye",
@@ -170,7 +293,24 @@
         "stempelOben": "8px",
         "stempelLinks": "5px",
         "passOben": "25px",
-        "passRechts": "155px"
+        "passRechts": "155px",
+        "briefmarke": {
+          "hintergrund": "rgba(57,199,115,0.644)",
+          "rahmen": "rgba(140,221,169,0.644)",
+          "innenrahmen": "rgba(168,91,85,1)",
+          "winkel": "-2deg",
+          "outline": "1px solid rgba(155,66,66,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(0,0,0,0.35)",
+          "rahmen": "rgba(0,0,0,0.35)",
+          "winkel": "12deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/turkei-umriss.svg",
+          "transparenz": 0.50
+        }
       }
     },
     {
@@ -181,7 +321,6 @@
       "link": "https://terma334.github.io/old/2024Holland/index.html",
       "bild": "https://terma334.github.io/old/2024Holland/pictures/Tag2/6.jpg",
       "laender": ["nl"],
-      "navigationsName": "Holland",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/nl.png",
         "stempelText": "NEDERLAND",
@@ -192,7 +331,24 @@
         "stempelOben": "8px",
         "stempelRechts": "10px",
         "passOben": "15px",
-        "passRechts": "45px"
+        "passRechts": "45px",
+        "briefmarke": {
+          "hintergrund": "rgba(242,227,213,1)",
+          "rahmen": "rgba(0,0,0,1)",
+          "innenrahmen": "rgba(168,91,85,1)",
+          "winkel": "5deg",
+          "outline": "1px solid rgba(0,0,0,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(0,0,255,0.55)",
+          "rahmen": "rgba(0,0,255,0.55)",
+          "winkel": "25deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/holland-umriss.svg",
+          "transparenz": 0.50
+        }
       }
     },
     {
@@ -203,7 +359,6 @@
       "link": "https://terma334.github.io/old2/2023Hamburg/index.html",
       "bild": "https://terma334.github.io/old2/2023Hamburg/pictures/Tag1/10.jpg",
       "laender": ["de"],
-      "navigationsName": "Hamburg",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/de.png",
         "stempelText": "HH",
@@ -214,7 +369,22 @@
         "stempelOben": "5px",
         "stempelRechts": "10px",
         "passOben": "15px",
-        "passRechts": "30px"
+        "passRechts": "30px",
+        "briefmarke": {
+          "hintergrund": "rgba(255,255,255,1)",
+          "rahmen": "rgba(0,0,0,1)",
+          "innenrahmen": "rgba(168,91,85,1)",
+          "outline": "1px solid rgba(0,0,0,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(0,0,0,0.35)",
+          "rahmen": "rgba(0,0,0,0.35)"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/deutschland-umriss.svg",
+          "transparenz": 0.50
+        }
       }
     },
     {
@@ -225,7 +395,6 @@
       "link": "https://terma334.github.io/2022Azoren/index.html",
       "bild": "https://terma334.github.io/2022Azoren/pictures/Tag2/6.jpg",
       "laender": ["pt"],
-      "navigationsName": "Azoren",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/pt.png",
         "stempelText": "Açores",
@@ -236,7 +405,24 @@
         "stempelOben": "8px",
         "stempelRechts": "5px",
         "passOben": "20px",
-        "passRechts": "45px"
+        "passRechts": "45px",
+        "briefmarke": {
+          "hintergrund": "rgb(249,143,143)",
+          "rahmen": "rgba(155,66,66,1)",
+          "innenrahmen": "rgba(168,91,85,1)",
+          "winkel": "1deg",
+          "outline": "1px solid rgba(155,66,66,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(0,0,128,0.85)",
+          "rahmen": "rgba(0,0,128,0.85)",
+          "winkel": "12deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/azoren-umriss.svg",
+          "transparenz": 0.50
+        }
       }
     },
     {
@@ -247,7 +433,6 @@
       "link": "https://terma334.github.io/old2/2021Belgien/index.html",
       "bild": "https://terma334.github.io/old2/2021Belgien/pictures/Tag2/10.jpg",
       "laender": ["be"],
-      "navigationsName": "Belgien",
       "postkarte": {
         "flagge": "https://flagcdn.com/w160/be.png",
         "stempelText": "BELGIQUE",
@@ -258,7 +443,23 @@
         "stempelOben": "8px",
         "stempelLinks": "5px",
         "passOben": "25px",
-        "passRechts": "175px"
+        "passRechts": "175px",
+        "briefmarke": {
+          "hintergrund": "rgba(255,255,255,1)",
+          "rahmen": "rgba(0,0,0,1)",
+          "innenrahmen": "rgba(0,0,0,1)",
+          "outline": "1px solid rgba(0,0,0,1)",
+          "outlineOffset": "-5px"
+        },
+        "passStempel": {
+          "farbe": "rgba(0,0,0,1)",
+          "rahmen": "rgba(0,0,0,1)",
+          "winkel": "-47deg"
+        },
+        "wasserzeichen": {
+          "bild": "startseite/belgien-umriss.svg",
+          "transparenz": 0.50
+        }
       }
     }
   ]

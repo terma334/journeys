@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylestartseite.css">
+        <link rel="stylesheet" href="startseite/world/world.css">
 </head>
 
 <body>
@@ -59,6 +60,43 @@
 
         </section>
 
+<!-- =====================================
+     INTERAKTIVE REISEWELT
+     ===================================== -->
+
+<section class="reise-welt-bereich">
+
+    <div class="karten-ueberschrift">
+        <span>MEINE REISEWELT</span>
+        <div></div>
+    </div>
+
+    <div id="map-container">
+
+        <div id="world-map">
+            <!-- Die SVG-Weltkarte wird hier geladen -->
+        </div>
+
+    </div>
+
+    <div id="country-info" class="country-info">
+        <img id="country-image" src="" alt="Reisefoto">
+
+        <h3 id="country-name"></h3>
+
+        <p id="country-date"></p>
+
+        <p id="country-description"></p>
+
+        <a id="country-link" href="">
+            Reise ansehen →
+        </a>
+    </div>
+
+</section>
+
+
+
         <footer class="startseiten-footer">
             <span></span>
             <p>Die Welt entdecken ...</p>
@@ -67,10 +105,16 @@
         </footer>
 
     </main>
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
-    <script src="reisen-navigation.js"></script>
-    <script src="startseite.js"></script>
+<script src="reisedaten-loader.js"></script>
+
+<script src="reisen-navigation.js"></script>
+
+<script src="startseite.js"></script>
+
+<script src="startseite/world/world.js"></script>
+
 
 </body>
 </html>

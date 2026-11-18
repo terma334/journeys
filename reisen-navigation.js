@@ -1,102 +1,95 @@
 
-const basisPfad = "https://terma334.github.io/journeys/";
+(function () {
 
-const reiseJahre = [
-    {
-        jahr: "2027",
-        reisen: [
-            { name: "Dummy", link: "https://terma334.github.io/2026SriLanka/index.html" },
-        ]
-    },
-    {
-        jahr: "2026",
-        reisen: [
-            { name: "Island", link: "https://terma334.github.io/2026Island/index.html" },
-            { name: "Großbritannien", link: "https://terma334.github.io/2026GB/index.html" },
-            { name: "Sri Lanka", link: "https://terma334.github.io/2026SriLanka/index.html" },
-        ]
-    },
-    {
-        jahr: "2025",
-        reisen: [
-            { name: "London", link: "https://terma334.github.io/2025London/index.html" },
-            { name: "Teneriffa", link: "https://terma334.github.io/2025Teneriffa/index.html" },
-            { name: "Finstermühle", link: "https://terma334.github.io/2025Finstermühle/index.html" },
-        ]
-    },
-    {
-        jahr: "2024-2021",
-        reisen: [
-            { name: "Türkei", link: "https://terma334.github.io/old/2024Turkei/index.html" },
-            { name: "Holland", link: "https://terma334.github.io/old/2024Holland/index.html" },
-            { name: "Hamburg", link: "https://terma334.github.io/old2/2023Hamburg/index.html" },
-            { name: "Azoren", link: "https://terma334.github.io/2022Azoren/index.html" },
-            { name: "Belgien", link: "https://terma334.github.io/old2/2021Belgien/index.html" },
-        ]
-    },
-];
+    const basisPfad = "https://terma334.github.io/journeys/";
 
-function reisenNavigationErstellen() {
+    function reisenNavigationErstellen(daten) {
 
-    const container = document.getElementById("reisen-links");
+        const container = document.getElementById("reisen-links");
 
-    if (!container) return;
+        if (!container) return;
 
-    container.innerHTML = `
-        <a href="${basisPfad}index.html"
-           class="reiseuebersicht-link"
-           onclick="toggleMenu()">
-            Reiseübersicht
-        </a>
-    `;
+        container.innerHTML = `
 
-    reiseJahre.forEach(gruppe => {
+            <a href="${basisPfad}index.html"
+               class="reiseuebersicht-link"
+               onclick="toggleMenu()">
 
-        const details = document.createElement("details");
+                Reiseübersicht
 
-        details.className = "reise-jahr-dropdown";
-        details.dataset.jahr = gruppe.jahr;
+            </a>
 
-        // Gespeicherten Zustand wiederherstellen
-        details.open = localStorage.getItem(
-            "reisejahr-" + gruppe.jahr
-        ) === "true";
-
-        details.innerHTML = `
-            <summary>${gruppe.jahr}</summary>
-            <div class="reise-jahr-links"></div>
         `;
 
-        const links = details.querySelector(".reise-jahr-links");
+        daten.navigation.gruppen.forEach(gruppe => {
 
-        gruppe.reisen.forEach(reise => {
+            const details = document.createElement("details");
 
-            const link = document.createElement("a");
+            details.className = "reise-jahr-dropdown";
+            details.dataset.jahr = gruppe.jahr;
 
-            // Einzelne Reise direkt über ihre vollständige URL aufrufen
-            link.href = reise.link;
+            // Gespeicherten Zustand wiederherstellen
 
-            link.textContent = reise.name;
-            link.onclick = toggleMenu;
+            details.open = localStorage.getItem(
+                "reisejahr-" + gruppe.jahr
+            ) === "true";
 
-            links.appendChild(link);
+            details.innerHTML = `
+                <summary>${gruppe.jahr}</summary>
+                <div class="reise-jahr-links"></div>
+            `;
+
+            const links = details.querySelector(".reise-jahr-links");
+
+            gruppe.reisen.forEach(reiseId => {
+
+                const reise = daten.reisen.find(
+                    eintrag => eintrag.id === reiseId
+                );
+
+                if (!reise) {
+                    console.warn("Reise nicht gefunden:", reiseId);
+                    return;
+                }
+
+                const link = document.createElement("a");
+
+                link.href = reise.link;
+                link.textContent = reise.navigationsName || reise.name;
+                link.onclick = toggleMenu;
+
+                links.appendChild(link);
+
+            });
+
+            // Änderungen am Aufklappzustand speichern
+
+            details.addEventListener("toggle", () => {
+
+                localStorage.setItem(
+                    "reisejahr-" + gruppe.jahr,
+                    details.open
+                );
+
+            });
+
+            container.appendChild(details);
 
         });
 
-        // Änderungen am Aufklappzustand speichern
-        details.addEventListener("toggle", () => {
+    }
 
-            localStorage.setItem(
-                "reisejahr-" + gruppe.jahr,
-                details.open
+    // Erst starten, wenn die JSON-Daten geladen sind
+
+    window.reisedatenLaden
+        .then(reisenNavigationErstellen)
+        .catch(fehler => {
+
+            console.error(
+                "Reisenavigation konnte nicht erstellt werden:",
+                fehler
             );
 
         });
 
-        container.appendChild(details);
-
-    });
-
-}
-
-document.addEventListener("DOMContentLoaded", reisenNavigationErstellen);
+})();
