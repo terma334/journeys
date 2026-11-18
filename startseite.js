@@ -201,7 +201,7 @@
             jahr: "2021",
             beschreibung: "Waterloo",
             link: "https://terma334.github.io/old2/2021Belgien/index.html",
-            bild: "https://terma334.github.io/old2/2021Belgien/pictures/Tag2/6.jpg",
+            bild: "https://terma334.github.io/old2/2021Belgien/pictures/Tag2/10.jpg",
             flagge: "https://flagcdn.com/w160/be.png",
             stempelText: "BELGIQUE",
             stempelTyp: "belgien",
@@ -212,7 +212,7 @@
             stempelLinks: "5px",
             stempelRechts: "",
             passOben: "25px",
-            passRechts: "155px"
+            passRechts: "175px"
         },
 
     ];

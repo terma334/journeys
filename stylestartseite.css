@@ -857,19 +857,19 @@
 
 /* Belgien */
 .briefmarke-belgien {
-    background: rgba(242,227,213,1);
-    border-color: rgba(155,66,66,1);
-    outline: 1px solid rgba(155,66,66,1);
+    background: rgba(255,255,255,1);
+    border-color: rgba(0,0,0,1);
+    outline: 1px solid rgba(0,0,0,1);
     outline-offset: -5px;
-    transform: rotate(5deg);
+    transform: rotate(0deg);
 }
 .briefmarke-belgien .marken-inhalt {
-    border-color: rgba(168,91,85,1);
+    border-color: rgba(0,0,0,1);
 }
 .pass-belgien {
-    color: rgba(155,55,55,0.85);
-    border-color: rgba(155,55,55,0.85);
-    transform: rotate(12deg);
+    color: rgba(0,0,0,1);
+    border-color: rgba(0,0,0,1);
+    transform: rotate(-47deg);
 }
 .startseiten-karte.belgien::before {
     background-image: url("startseite/belgien-umriss.svg");
