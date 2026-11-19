@@ -78,6 +78,38 @@
 
 
 /* =========================================
+   VINTAGE-SCROLLBALKEN
+   ========================================= */
+
+.country-info {
+    scrollbar-width: thin;
+    scrollbar-color: #a58b65 #eee2c6;
+}
+
+/* Chrome, Edge und Safari */
+
+.country-info::-webkit-scrollbar {
+    width: 7px;
+}
+
+.country-info::-webkit-scrollbar-track {
+    background: #eee2c6;
+    border-radius: 20px;
+}
+
+.country-info::-webkit-scrollbar-thumb {
+    background: #a58b65;
+    border-radius: 10px;
+    border: 1px solid #eee2c6;
+}
+
+.country-info::-webkit-scrollbar-thumb:hover {
+    background: #39a96b;
+}
+
+
+
+/* =========================================
    LÄNDERÜBERSCHRIFT
    ========================================= */
 

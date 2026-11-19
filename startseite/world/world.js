@@ -159,74 +159,81 @@
                     });
 
                     // Länder mit Reiseseite: weiß und interaktiv
-                    laenderMitReiseseite.forEach(code => {
+                    
+laenderMitReiseseite.forEach(code => {
 
-                        const country = mapContainer.querySelector(
-                            `.country[id="${code}"]`
-                        );
+    // Alle Flächen eines Landes finden (Festland und Inseln)
+    const countryElements = mapContainer.querySelectorAll(
+        `.country[id="${code}"], .country[data-country="${code}"]`
+    );
 
-                        if (!country) {
-                            console.warn("Land nicht gefunden:", code);
-                            return;
-                        }
+    if (!countryElements.length) {
+        console.warn("Land nicht gefunden:", code);
+        return;
+    }
 
-                        country.style.fill = "#ffffff";
-                        country.style.cursor = "pointer";
+    countryElements.forEach(country => {
 
-                        // PC: Maus über ein Land bewegen
-                        country.addEventListener("pointerenter", event => {
+        country.style.fill = "#ffffff";
+        country.style.cursor = "pointer";
 
-                            if (event.pointerType !== "mouse") return;
+        // PC: Maus über ein Land bewegen
+        country.addEventListener("pointerenter", event => {
 
-                            clearTimeout(ausblendTimer);
+            if (event.pointerType !== "mouse") return;
 
-                            country.style.fill = "#39c879";
+            clearTimeout(ausblendTimer);
 
-                            landAnzeigen(code, event.clientX, event.clientY);
-                        });
+            country.style.fill = "#39c879";
 
-                        country.addEventListener("pointermove", event => {
+            landAnzeigen(code, event.clientX, event.clientY);
+        });
 
-                            if (event.pointerType !== "mouse") return;
+        country.addEventListener("pointermove", event => {
 
-                            if (aktivesLand === code) {
-                                positionieren(event.clientX, event.clientY);
-                            }
-                        });
+            if (event.pointerType !== "mouse") return;
 
-                        country.addEventListener("pointerleave", event => {
+            if (aktivesLand === code) {
+                positionieren(event.clientX, event.clientY);
+            }
+        });
 
-                            if (event.pointerType !== "mouse") return;
+        country.addEventListener("pointerleave", event => {
 
-                            country.style.fill = "#ffffff";
-                            ausblendenVerzoegern();
-                        });
+            if (event.pointerType !== "mouse") return;
 
-                        // Smartphone und Tablet: Land antippen
-                        country.addEventListener("click", event => {
+            country.style.fill = "#ffffff";
+            ausblendenVerzoegern();
+        });
 
-                            if (event.pointerType === "mouse") return;
+        // Smartphone und Tablet: Land antippen
+        country.addEventListener("click", event => {
 
-                            event.stopPropagation();
+            if (event.pointerType === "mouse") return;
 
-                            clearTimeout(ausblendTimer);
+            event.stopPropagation();
 
-                            if (aktivesLand === code && infoBox.style.display === "block") {
-                                infoboxSchliessen();
-                                return;
-                            }
+            clearTimeout(ausblendTimer);
 
-                            country.style.fill = "#39c879";
+            if (aktivesLand === code && infoBox.style.display === "block") {
+                infoboxSchliessen();
+                return;
+            }
 
-                            const rechteck = country.getBoundingClientRect();
+            country.style.fill = "#39c879";
 
-                            landAnzeigen(
-                                code,
-                                rechteck.left + rechteck.width / 2,
-                                rechteck.top + rechteck.height / 2
-                            );
-                        });
-                    });
+            const rechteck = country.getBoundingClientRect();
+
+            landAnzeigen(
+                code,
+                rechteck.left + rechteck.width / 2,
+                rechteck.top + rechteck.height / 2
+            );
+        });
+
+    });
+});
+
 
                     // Weitere bereiste Länder: hellgrau und ohne Interaktion
                     weitereBereisteLaender.forEach(code => {
