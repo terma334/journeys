@@ -174,7 +174,7 @@ laenderMitReiseseite.forEach(code => {
 
     countryElements.forEach(country => {
 
-        country.style.fill = "#ffffff";
+        country.style.fill = "#39c879";
         country.style.cursor = "pointer";
 
         // PC: Maus über ein Land bewegen
@@ -184,7 +184,7 @@ laenderMitReiseseite.forEach(code => {
 
             clearTimeout(ausblendTimer);
 
-            country.style.fill = "#39c879";
+            country.style.fill = "#49ff9b";
 
             landAnzeigen(code, event.clientX, event.clientY);
         });
@@ -202,7 +202,7 @@ laenderMitReiseseite.forEach(code => {
 
             if (event.pointerType !== "mouse") return;
 
-            country.style.fill = "#ffffff";
+            country.style.fill = "#39c879";
             ausblendenVerzoegern();
         });
 
@@ -220,7 +220,7 @@ laenderMitReiseseite.forEach(code => {
                 return;
             }
 
-            country.style.fill = "#39c879";
+            country.style.fill = "#49ff9b";
 
             const rechteck = country.getBoundingClientRect();
 
@@ -250,7 +250,7 @@ laenderMitReiseseite.forEach(code => {
                             return;
                         }
 
-                        country.style.fill = "#d3d3d3";
+                        country.style.fill = "#ffffff";
                         country.style.cursor = "default";
                     });
 
