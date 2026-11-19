@@ -1,4 +1,3 @@
-
 {
   "einstellungen": {
     "basisPfad": "https://terma334.github.io/journeys/"
@@ -68,7 +67,7 @@
       "laender": ["is"],
       "navigationsName": "Island",
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/is.png",
+        "flagge": "startseite/flaggen/is.png",
         "stempelText": "Ísland",
         "stempelTyp": "island",
         "symbol": "❄",
@@ -106,7 +105,7 @@
       "laender": ["gb"],
       "navigationsName": "Großbritannien",
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/gb.png",
+        "flagge": "startseite/flaggen/gb.png",
         "stempelText": "UNITED KINGDOM",
         "stempelTyp": "uk",
         "symbol": "♛",
@@ -144,7 +143,7 @@
       "bild": "https://terma334.github.io/2026SriLanka/pictures/Tag3/a/6.jpg",
       "laender": ["lk"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/lk.png",
+        "flagge": "startseite/flaggen/lk.png",
         "stempelText": "ශ්‍රී ලංකා",
         "stempelTyp": "sri-lanka",
         "symbol": "🐘",
@@ -186,7 +185,7 @@
       "bild": "https://terma334.github.io/2025London/pictures/Tag2/8.jpg",
       "laender": ["gb"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/gb.png",
+        "flagge": "startseite/flaggen/gb.png",
         "stempelText": "LONDON",
         "stempelTyp": "london",
         "symbolBild": "startseite/stempel/london-stempel.svg",
@@ -228,7 +227,7 @@
       "bild": "https://terma334.github.io/2025Teneriffa/pictures/Tag4/2.jpg",
       "laender": ["es"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/es.png",
+        "flagge": "startseite/flaggen/es.png",
         "stempelText": "TENERIFE",
         "stempelTyp": "teneriffa",
         "symbolBild": "startseite/stempel/teneriffa-stempel.svg",
@@ -271,7 +270,7 @@
       "laender": ["de"],
       "navigationsName": "Finstermühle",
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/de.png",
+        "flagge": "startseite/flaggen/de.png",
         "stempelText": "Finster mühle",
         "stempelTyp": "finstermühle",
         "symbolBild": "startseite/stempel/finstermuhle-stempel.svg",
@@ -308,7 +307,7 @@
       "bild": "https://terma334.github.io/old/2024Turkei/pictures/Tag1/1.jpg",
       "laender": ["tr"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/tr.png",
+        "flagge": "startseite/flaggen/tr.png",
         "stempelText": "Türkiye",
         "stempelTyp": "türkei",
         "symbolBild": "startseite/stempel/turkei-stempel.svg",
@@ -346,7 +345,7 @@
       "bild": "https://terma334.github.io/old/2024Holland/pictures/Tag2/6.jpg",
       "laender": ["nl"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/nl.png",
+        "flagge": "startseite/flaggen/nl.png",
         "stempelText": "NEDERLAND",
         "stempelTyp": "holland",
         "symbolBild": "startseite/stempel/holland-stempel.svg",
@@ -384,7 +383,7 @@
       "bild": "https://terma334.github.io/old2/2023Hamburg/pictures/Tag1/10.jpg",
       "laender": ["de"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/de.png",
+        "flagge": "startseite/flaggen/de.png",
         "stempelText": "HH",
         "stempelTyp": "hamburg",
         "symbolBild": "startseite/stempel/hamburg-stempel.svg",
@@ -420,7 +419,7 @@
       "bild": "https://terma334.github.io/2022Azoren/pictures/Tag2/6.jpg",
       "laender": ["pt"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/pt.png",
+        "flagge": "startseite/flaggen/pt.png",
         "stempelText": "Açores",
         "stempelTyp": "azoren",
         "symbolBild": "startseite/stempel/azoren-stempel.svg",
@@ -458,7 +457,7 @@
       "bild": "https://terma334.github.io/old2/2021Belgien/pictures/Tag2/10.jpg",
       "laender": ["be"],
       "postkarte": {
-        "flagge": "https://flagcdn.com/w160/be.png",
+        "flagge": "startseite/flaggen/be.png",
         "stempelText": "BELGIQUE",
         "stempelTyp": "belgien",
         "symbolBild": "startseite/stempel/belgien-stempel.svg",
