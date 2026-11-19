@@ -3,6 +3,30 @@
   "einstellungen": {
     "basisPfad": "https://terma334.github.io/journeys/"
   },
+  "weitereBereisteLaender": [
+    "fr",
+    "at",
+    "ch",
+    "no",
+    "se",
+    "dk",
+    "pl",
+    "cz",
+    "it",
+    "lu",
+    "hu"
+  ],
+  "laenderNamen": {
+    "is": "Island",
+    "gb": "Großbritannien",
+    "lk": "Sri Lanka",
+    "es": "Spanien",
+    "tr": "Türkei",
+    "nl": "Niederlande",
+    "de": "Deutschland",
+    "pt": "Portugal",
+    "be": "Belgien"
+  },
   "navigation": {
     "gruppen": [
       {
@@ -67,7 +91,7 @@
           "winkel": "-12deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/island-umriss.svg",
+          "bild": "startseite/umrisse/island-umriss.svg",
           "transparenz": 0.70
         }
       }
@@ -106,7 +130,7 @@
           "winkel": "12deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/grossbritannien-umriss.svg",
+          "bild": "startseite/umrisse/grossbritannien-umriss.svg",
           "transparenz": 0.30
         }
       }
@@ -144,7 +168,7 @@
           "winkel": "-9deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/sri-lanka-umriss.svg",
+          "bild": "startseite/umrisse/sri-lanka-umriss.svg",
           "transparenz": 0.50,
           "rechts": "200px",
           "unten": "1px",
@@ -186,7 +210,7 @@
           "winkel": "12deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/grossbritannien-umriss.svg",
+          "bild": "startseite/umrisse/grossbritannien-umriss.svg",
           "transparenz": 0.50,
           "rechts": "200px",
           "unten": "1px",
@@ -228,7 +252,7 @@
           "winkel": "35deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/teneriffa-umriss.svg",
+          "bild": "startseite/umrisse/teneriffa-umriss.svg",
           "transparenz": 0.50,
           "rechts": "100px",
           "unten": "1px",
@@ -270,7 +294,7 @@
           "winkel": "0deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/deutschland-umriss.svg",
+          "bild": "startseite/umrisse/deutschland-umriss.svg",
           "transparenz": 0.50
         }
       }
@@ -308,7 +332,7 @@
           "winkel": "12deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/turkei-umriss.svg",
+          "bild": "startseite/umrisse/turkei-umriss.svg",
           "transparenz": 0.50
         }
       }
@@ -346,7 +370,7 @@
           "winkel": "25deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/holland-umriss.svg",
+          "bild": "startseite/umrisse/holland-umriss.svg",
           "transparenz": 0.50
         }
       }
@@ -382,7 +406,7 @@
           "rahmen": "rgba(0,0,0,0.35)"
         },
         "wasserzeichen": {
-          "bild": "startseite/deutschland-umriss.svg",
+          "bild": "startseite/umrisse/deutschland-umriss.svg",
           "transparenz": 0.50
         }
       }
@@ -420,7 +444,7 @@
           "winkel": "12deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/azoren-umriss.svg",
+          "bild": "startseite/umrisse/azoren-umriss.svg",
           "transparenz": 0.50
         }
       }
@@ -457,7 +481,7 @@
           "winkel": "-47deg"
         },
         "wasserzeichen": {
-          "bild": "startseite/belgien-umriss.svg",
+          "bild": "startseite/umrisse/belgien-umriss.svg",
           "transparenz": 0.50
         }
       }

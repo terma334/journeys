@@ -47,18 +47,24 @@
         </header>
 
         <!-- Die Reisekarten werden automatisch erzeugt -->
-        <section class="reise-karten-bereich">
+<section class="reise-karten-bereich">
 
-            <div class="karten-ueberschrift">
-                <span>MEINE REISEZIELE</span>
-                <div></div>
-            </div>
+    <details class="startseiten-einklappbereich" id="reiseziele-abschnitt" open>
 
-            <div id="reise-karten" class="reise-karten">
-                <!-- Inhalt kommt aus startseite.js -->
-            </div>
+        <summary class="karten-ueberschrift">
+            <span>MEINE REISEZIELE</span>
+            <span class="abschnitt-pfeil">⌄</span>
+            <div></div>
 
-        </section>
+        </summary>
+
+        <div id="reise-karten" class="reise-karten">
+            <!-- Inhalt kommt aus startseite.js -->
+        </div>
+
+    </details>
+
+</section>
 
 <!-- =====================================
      INTERAKTIVE REISEWELT
@@ -66,10 +72,14 @@
 
 <section class="reise-welt-bereich">
 
-    <div class="karten-ueberschrift">
-        <span>MEINE REISEWELT</span>
-        <div></div>
-    </div>
+    <details class="startseiten-einklappbereich" id="reisewelt-abschnitt" open>
+
+        <summary class="karten-ueberschrift">
+            <span>MEINE REISEWELT</span>
+            <span class="abschnitt-pfeil">⌄</span>
+            <div></div>
+        </summary>
+
 
     <div id="map-container">
 
@@ -92,7 +102,7 @@
             Reise ansehen →
         </a>
     </div>
-
+    </details>
 </section>
 
 
@@ -105,14 +115,12 @@
         </footer>
 
     </main>
+
+
 <script src="script.js"></script>
-
 <script src="reisedaten-loader.js"></script>
-
 <script src="reisen-navigation.js"></script>
-
 <script src="startseite.js"></script>
-
 <script src="startseite/world/world.js"></script>
 
 

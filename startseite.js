@@ -278,3 +278,40 @@ if (wasserzeichen.bild) {
         });
 
 })();
+
+
+
+(function () {
+
+    const abschnitte = [
+        "reiseziele-abschnitt",
+        "reisewelt-abschnitt"
+    ];
+
+    abschnitte.forEach(id => {
+
+        const bereich = document.getElementById(id);
+
+        if (!bereich) return;
+
+        const gespeicherterZustand = localStorage.getItem(
+            "startseite-" + id
+        );
+
+        if (gespeicherterZustand !== null) {
+            bereich.open = gespeicherterZustand === "offen";
+        }
+
+        bereich.addEventListener("toggle", () => {
+
+            localStorage.setItem(
+                "startseite-" + id,
+                bereich.open ? "offen" : "geschlossen"
+            );
+
+        });
+
+    });
+
+})();
+
